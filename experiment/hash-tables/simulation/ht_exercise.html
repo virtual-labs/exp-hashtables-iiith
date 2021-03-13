@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+        <title id="htmltitle">Hash Tables Exercise</title>
+        <link rel="stylesheet" href="css/hash-styles.css" type="text/css">
+
+  </head>
+  <body>
+    <div class="instruction-box">
+      <button class="collapsible"> Instructions </button>
+      <div class="content">
+        <ul>
+          <li>Type the numbers in the correct places in the hash table.</li>
+          <li>Click on Submit once you are done.</li>
+          <li>Click Reset button to reset the artefact.</li> 
+          <li>Click New Question button to generate new questions.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div id="wrapper">
+       <div id="question-wrapper">
+         <label id="question-tag">Question: </label>
+         <p id="thequestion">Insert 41, 63, 89, 94, 82 and 45 in the given hash table.</p>
+       </div>
+             
+       <div class="thetable">
+         <div class="valuerow">
+           <label id="valuelabel">Hash Values :</label>
+           <input class="values" type="text" id="0" autocomplete="off">
+           <input class="values" type="text" id="1" autocomplete="off">
+           <input class="values" type="text" id="2" autocomplete="off">
+           <input class="values" type="text" id="3" autocomplete="off">
+           <input class="values" type="text" id="4" autocomplete="off">
+           <input class="values" type="text" id="5" autocomplete="off">
+           <input class="values" type="text" id="6" autocomplete="off">
+           <input class="values" type="text" id="7" autocomplete="off">
+           <input class="values" type="text" id="8" autocomplete="off">
+           <input class="values" type="text" id="9" autocomplete="off">
+         </div>
+         <div class="indexrow">
+           <label id="indexlabel">Index Values :</label>
+           <ul class="indices">
+             <li id="index0">0</li>
+             <li id="index1">1</li>
+             <li id="index2">2</li>
+             <li id="index3">3</li>
+             <li id="index4">4</li>
+             <li id="index5">5</li>
+             <li id="index6">6</li>
+             <li id="index7">7</li>
+             <li id="index8">8</li>
+             <li id="index9">9</li>
+           </ul>
+         </div>
+       </div>
+       
+       <ul class="legend" id="exercisestatus">
+         <li><span class="green" id="correct_box"></span> Correctly Filled Boxes</li>
+         <li><span class="red" id="incorrect_box"></span> Incorrectly Filled Boxes</li>
+       </ul>
+       
+       <div class="buttons-wrapper">
+         <input class="button-input" id="submitbutton" type="button" value="Submit">
+         <input class="button-input" id="restartbutton" type="button" value="Reset">
+         <input class="button-input" id="newbutton" type="button" value="New Question">
+       </div>
+       
+    </div>
+    <script src="js/exercise_artefacts.js" type="text/javascript"></script>
+
+  </body>
+</html>

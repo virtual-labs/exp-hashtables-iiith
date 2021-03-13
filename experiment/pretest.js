@@ -89,48 +89,57 @@
 
 
      const myQuestions = [{
-            question: "1. Sample question1", ///// Write the question inside double quotes
+            question: "1. Which of the following is not a disadvantage to the usage of array?", ///// Write the question inside double quotes
             answers: {
-                a: "1", ///// Write the option 1 inside double quotes
-                b: "2", ///// Write the option 2 inside double quotes
-                c: "3", ///// Write the option 2 inside double quotes
-                d: "4", ///// Write the option 2 inside double quotes
+                a: " Fixed size", ///// Write the option 1 inside double quotes
+                b: "You know the size of the array prior to allocation ", ///// Write the option 2 inside double quotes
+                c: " Insertion based on position ", ///// Write the option 2 inside double quotes
+                d: "Accessing elements at specified positions", ///// Write the option 2 inside double quotes
             },
-            correctAnswer: "b" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "2. Sample question2",  ///// Write the question inside double quotes
+      question: "2. What is the time complexity to count the number of elements in the linked list? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "O(1)",                  ///// Write the option 1 inside double quotes
+        b: "O(n)",                  ///// Write the option 2 inside double quotes
+	c: "O(NLogN)", ///// Write the option 3 inside double quotes
+        d: "None of the mentioned", ///// Write the option 4 inside double quotes
              },
-      correctAnswer: "a"                ///// Write the correct option inside double quotes
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
 {
-      question: "3. Sample question3",  ///// Write the question inside double quotes
+      question: "3. What is the space complexity for deleting a linked list?",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: " O(1)",                  ///// Write the option 1 inside double quotes
+        b: "O(n)",                  ///// Write the option 2 inside double quotes
+	c: "Either O(1) or O(n)", ///// Write the option 3 inside double quotes
+        d: " O(logn)", ///// Write the option 4 inside double quotes
+             },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
+    },
+{
+      question: "4. Which of these is an application of linked lists? ",  ///// Write the question inside double quotes
+      answers: {
+        a: "To implement file systems",                  ///// Write the option 1 inside double quotes
+        b: "For separate chaining in hash-tables ",                  ///// Write the option 2 inside double quotes
+	c: "To implement non-binary trees ", ///// Write the option 3 inside double quotes
+        d: "All of the mentioned ", ///// Write the option 4 inside double quotes
              },
       correctAnswer: "d"                ///// Write the correct option inside double quotes
     },
 {
-      question: "4. Sample question4",  ///// Write the question inside double quotes
+      question: "4. What is the search complexity in Simple Uniform Hashing? ",  ///// Write the question inside double quotes
       answers: {
-        a: "1",                  ///// Write the option 1 inside double quotes
-        b: "2",                  ///// Write the option 2 inside double quotes
-	c: "3", ///// Write the option 3 inside double quotes
-        d: "4", ///// Write the option 4 inside double quotes
+        a: "O(n) ",                  ///// Write the option 1 inside double quotes
+        b: "O(logn)  ",                  ///// Write the option 2 inside double quotes
+	c: "O(nlogn) ", ///// Write the option 3 inside double quotes
+        d: "O(1) ", ///// Write the option 4 inside double quotes
              },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+      correctAnswer: "d"                ///// Write the correct option inside double quotes
     },
-
      ];
 
 
