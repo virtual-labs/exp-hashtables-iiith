@@ -18,7 +18,7 @@
 ### Estimated Time for Pre Test Quiz
 
 10 minutes
-### Instructions for Pre-Test Quiz
+### Instructions for Pre Test Quiz
 
    - Pretest includes questions on arrays, linked lists, time complexity and space complexity.
    - If you want to revise these topics before taking the quiz, go through the Recap module first.
