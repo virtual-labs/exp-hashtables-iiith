@@ -272,13 +272,7 @@
         }
       ]
     },
-    {
-      "unit-type": "task",
-      "label": "Post Test Quiz Instructions",
-      "content-type": "assesment",
-      "source": "post-test.js",
-      "target": "post-test.html"
-    },
+   
     {
       "unit-type": "task",
       "label": "Post Test Quiz",
