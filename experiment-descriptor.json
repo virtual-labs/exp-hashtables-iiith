@@ -1,0 +1,292 @@
+{
+  "unit-type": "lu",
+  "label": "Hash Tables",
+  "basedir": ".",
+  "units": [
+    {
+      "unit-type": "aim"
+    },
+    {
+      "unit-type": "task",
+      "label": "Overview",
+      "content-type": "video",
+      "source": "overview.md",
+      "target": "overview.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Recap",
+      "content-type": "video",
+      "source": "recap.md",
+      "target": "recap.html"
+    },
+    {
+      "unit-type": "task",
+      "label": "Pre Test Quiz",
+      "content-type": "assesment",
+      "source": "pretest.js",
+      "target": "pretest.html"
+    },
+    {
+      "unit-type": "lu",
+      "label": "Hash Tables",
+      "basedir": "hash-tables",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+        {
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Introduction to Hashing",
+          "content-type": "video",
+          "source": "introduction-to-hashing.md",
+          "target": "introduction-to-hashing.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Hash Tables Operations",
+          "content-type": "video",
+          "source": "hash-tables-operations.md",
+          "target": "hash-tables-operations.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Hash Tables Practice",
+          "content-type": "simulation",
+          "source": "simulation/ht_practice.html",
+          "target": "ht_practice.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Hash Tables Exercise",
+          "content-type": "simulation",
+          "source": "simulation/ht_exercise.html",
+          "target": "ht_exercise.html"
+        },
+	
+        
+	{
+         "unit-type": "task",
+         "label": "Hash Tables Quiz",
+         "content-type": "assesment",
+         "source": "hash-tables-quiz.js",
+         "target": "hash-tables-quiz.html"
+       }
+      
+      ]
+    },
+    {
+      "unit-type": "lu",
+      "label": "Collision Resolution",
+      "basedir": "collision-resolution",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Introduction",
+          "content-type": "video",
+          "source": "introduction.md",
+          "target": "introduction.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Seperate Chaining",
+          "content-type": "video",
+          "source": "seperate-chaining.md",
+          "target": "seperate-chaining.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Open Addressing",
+          "content-type": "video",
+          "source": "open-addressing.md",
+          "target": "open-addressing.html"
+        },
+	
+        {
+         "unit-type": "task",
+         "label": "Collision Resolution Quiz",
+         "content-type": "assesment",
+         "source": "collision-resolution-quiz.js",
+         "target": "collision-resolution-quiz.html"
+       }
+      ]
+    },
+        {
+      "unit-type": "lu",
+      "label": "Linear Probing",
+      "basedir": "linear-probing",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Introduction to Probing",
+          "content-type": "video",
+          "source": "introduction-to-probing.md",
+          "target": "introduction-to-probing.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Introduction to Linear Probing",
+          "content-type": "video",
+          "source": "introduction-to-linear-probing.md",
+          "target": "introduction-to-linear-probing.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Linear Probing Practice",
+          "content-type": "simulation",
+          "source": "simulation/lp_practice.html",
+          "target": "lp_practice.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Linear Probing Exercise",
+          "content-type": "simulation",
+          "source": "simulation/lp_exercise.html",
+          "target": "lp_exercise.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Linear Probing Quiz",
+          "content-type": "assesment",
+          "source": "linear-probing-quiz.js",
+          "target": "linear-probing-quiz.html"
+        }
+      ]
+    },
+        {
+      "unit-type": "lu",
+      "label": "Quadratic Probing",
+      "basedir": "quadratic-probing",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Introduction to Quadratic Probing",
+          "content-type": "video",
+          "source": "introduction-to-quadratic-probing.md",
+          "target": "introduction-to-quadratic-probing.html"
+        },
+        
+        {
+          "unit-type": "task",
+          "label": "Quadratic Probing Practice",
+          "content-type": "simulation",
+          "source": "simulation/qp_practice.html",
+          "target": "qp_practice.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Quadratic Probing Exercise",
+          "content-type": "simulation",
+          "source": "simulation/qp_exercise.html",
+          "target": "qp_exercise.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Quadratic Probing Quiz",
+          "content-type": "assesment",
+          "source": "quadratic-probing-quiz.js",
+          "target": "quadratic-probing-quiz.html"
+        }
+      ]
+    },
+    {
+      "unit-type": "lu",
+      "label": "Double Hashing",
+      "basedir": "double-hashing",
+      "units": [
+        {
+          "unit-type": "aim"
+        },
+	{
+          "unit-type": "task",
+          "label": "Overview",
+          "content-type": "video",
+          "source": "overview.md",
+          "target": "overview.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Introduction to Double Hashing",
+          "content-type": "video",
+          "source": "introduction-to-double-hashing.md",
+          "target": "introduction-to-double-hashing.html"
+        },
+        
+        {
+          "unit-type": "task",
+          "label": "Double Hashing Practice",
+          "content-type": "simulation",
+          "source": "simulation/dh_practice.html",
+          "target": "dh_practice.html"
+        },
+	{
+          "unit-type": "task",
+          "label": "Double Hashing Exercise",
+          "content-type": "simulation",
+          "source": "simulation/dh_exercise.html",
+          "target": "dh_exercise.html"
+        },
+        {
+          "unit-type": "task",
+          "label": "Double Hashing Quiz",
+          "content-type": "assesment",
+          "source": "double-hashing.js",
+          "target": "double-hashing.html"
+        }
+      ]
+    },
+   
+    {
+      "unit-type": "task",
+      "label": "Post Test Quiz",
+      "content-type": "assesment",
+      "source": "posttest.js",
+      "target": "posttest.html"
+    },
+       
+    {
+      "unit-type": "task",
+      "label": "Further Readings/References",
+      "content-type": "text",
+      "source": "further-reading-and-references.md",
+      "target": "further-reading-and-references.html"
+    }
+  ]
+}
