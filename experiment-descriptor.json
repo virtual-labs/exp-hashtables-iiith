@@ -145,14 +145,14 @@
         },
         {
           "unit-type": "task",
-          "label": "Introduction to Probing",
+          "label": " Probing",
           "content-type": "video",
           "source": "introduction-to-probing.md",
           "target": "introduction-to-probing.html"
         },
         {
           "unit-type": "task",
-          "label": "Introduction to Linear Probing",
+          "label": " Linear Probing",
           "content-type": "video",
           "source": "introduction-to-linear-probing.md",
           "target": "introduction-to-linear-probing.html"
