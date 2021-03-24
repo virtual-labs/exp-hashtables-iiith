@@ -44,28 +44,28 @@
         },
 	{
           "unit-type": "task",
-          "label": "Introduction to Hashing",
+          "label": "Introduction",
           "content-type": "video",
           "source": "introduction-to-hashing.md",
           "target": "introduction-to-hashing.html"
         },
         {
           "unit-type": "task",
-          "label": "Hash Tables Operations",
+          "label": "Operations",
           "content-type": "video",
           "source": "hash-tables-operations.md",
           "target": "hash-tables-operations.html"
         },
         {
           "unit-type": "task",
-          "label": "Hash Tables Practice",
+          "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/ht_practice.html",
           "target": "ht_practice.html"
         },
         {
           "unit-type": "task",
-          "label": "Hash Tables Exercise",
+          "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/ht_exercise.html",
           "target": "ht_exercise.html"
@@ -74,7 +74,7 @@
         
 	{
          "unit-type": "task",
-         "label": "Hash Tables Quiz",
+         "label": "Quiz",
          "content-type": "assesment",
          "source": "hash-tables-quiz.js",
          "target": "hash-tables-quiz.html"
@@ -121,7 +121,7 @@
 	
         {
          "unit-type": "task",
-         "label": "Collision Resolution Quiz",
+         "label": "Quiz",
          "content-type": "assesment",
          "source": "collision-resolution-quiz.js",
          "target": "collision-resolution-quiz.html"
@@ -159,21 +159,21 @@
         },
         {
           "unit-type": "task",
-          "label": "Linear Probing Practice",
+          "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/lp_practice.html",
           "target": "lp_practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "Linear Probing Exercise",
+          "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/lp_exercise.html",
           "target": "lp_exercise.html"
         },
         {
           "unit-type": "task",
-          "label": "Linear Probing Quiz",
+          "label": "Quiz",
           "content-type": "assesment",
           "source": "linear-probing-quiz.js",
           "target": "linear-probing-quiz.html"
@@ -197,7 +197,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Introduction to Quadratic Probing",
+          "label": "Probing",
           "content-type": "video",
           "source": "introduction-to-quadratic-probing.md",
           "target": "introduction-to-quadratic-probing.html"
@@ -205,21 +205,21 @@
         
         {
           "unit-type": "task",
-          "label": "Quadratic Probing Practice",
+          "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/qp_practice.html",
           "target": "qp_practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "Quadratic Probing Exercise",
+          "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/qp_exercise.html",
           "target": "qp_exercise.html"
         },
         {
           "unit-type": "task",
-          "label": "Quadratic Probing Quiz",
+          "label": "Quiz",
           "content-type": "assesment",
           "source": "quadratic-probing-quiz.js",
           "target": "quadratic-probing-quiz.html"
@@ -243,7 +243,7 @@
         },
         {
           "unit-type": "task",
-          "label": "Introduction to Double Hashing",
+          "label": "Introduction",
           "content-type": "video",
           "source": "introduction-to-double-hashing.md",
           "target": "introduction-to-double-hashing.html"
@@ -251,21 +251,21 @@
         
         {
           "unit-type": "task",
-          "label": "Double Hashing Practice",
+          "label": "Practice",
           "content-type": "simulation",
           "source": "simulation/dh_practice.html",
           "target": "dh_practice.html"
         },
 	{
           "unit-type": "task",
-          "label": "Double Hashing Exercise",
+          "label": "Exercise",
           "content-type": "simulation",
           "source": "simulation/dh_exercise.html",
           "target": "dh_exercise.html"
         },
         {
           "unit-type": "task",
-          "label": "Double Hashing Quiz",
+          "label": "Quiz",
           "content-type": "assesment",
           "source": "double-hashing.js",
           "target": "double-hashing.html"

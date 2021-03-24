@@ -1,9 +1,7 @@
 ### Hash Tables Experiment Structure
 <iframe src="https://www.youtube.com/embed/qNfA8PTXb3k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-### Estimated Time
 
-1 hour
 ### Prerequisites of the Experiment
 
 This experiment requires you to have basic knowledge about :
