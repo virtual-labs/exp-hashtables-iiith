@@ -6,13 +6,13 @@
 
 This experiment requires you to have basic knowledge about :
 
-  -  Arrays
-  -  Linked Lists
-  -  Notion of Time and Space complexity
+  -  [Arrays](https://en.wikipedia.org/wiki/Array_data_structure)
+  -  [Linked Lists](https://en.wikipedia.org/wiki/Linked_list)
+  -  [Notion of Time and Space complexity](https://en.wikipedia.org/wiki/Time_complexity)
 
 And above all, a curiosity to learn and explore!
-### Overview of the Experiment
 
+### Overview of the Experiment
 
   -  The aim of this experiment is to understand hashing and its time and space complexity.
   -  The experiment features a series of modules with video lectures, interactive demonstrations, simulations, hands-on practice exercises and quizzes for self analysis.
