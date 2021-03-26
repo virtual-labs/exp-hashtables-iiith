@@ -37,18 +37,12 @@
         },
         {
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-	{
-          "unit-type": "task",
-          "label": "Introduction",
-          "content-type": "video",
-          "source": "introduction-to-hashing.md",
-          "target": "introduction-to-hashing.html"
-        },
+	
         {
           "unit-type": "task",
           "label": "Operations",
@@ -92,18 +86,12 @@
         },
 	{
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        {
-          "unit-type": "task",
-          "label": "Introduction",
-          "content-type": "video",
-          "source": "introduction.md",
-          "target": "introduction.html"
-        },
+        
         {
           "unit-type": "task",
           "label": "Seperate Chaining",
@@ -138,18 +126,12 @@
         },
 	{
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        {
-          "unit-type": "task",
-          "label": " Probing",
-          "content-type": "video",
-          "source": "introduction-to-probing.md",
-          "target": "introduction-to-probing.html"
-        },
+        
         {
           "unit-type": "task",
           "label": " Linear Probing",
@@ -190,18 +172,12 @@
         },
 	{
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        {
-          "unit-type": "task",
-          "label": "Probing",
-          "content-type": "video",
-          "source": "introduction-to-quadratic-probing.md",
-          "target": "introduction-to-quadratic-probing.html"
-        },
+        
         
         {
           "unit-type": "task",
@@ -236,18 +212,12 @@
         },
 	{
           "unit-type": "task",
-          "label": "Overview",
+          "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        {
-          "unit-type": "task",
-          "label": "Introduction",
-          "content-type": "video",
-          "source": "introduction-to-double-hashing.md",
-          "target": "introduction-to-double-hashing.html"
-        },
+        
         
         {
           "unit-type": "task",
