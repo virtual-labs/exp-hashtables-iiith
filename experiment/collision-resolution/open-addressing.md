@@ -4,7 +4,10 @@ Like separate chaining, open addressing is a method for handling collisions. In 
 ### Types of Open Addressing Method
 
 Open addressing is done in the following ways:
-a. Linear Probing
-b. Quadratic Probing
-c. Double Hashing
+
+a. Linear Probing <br> 
+
+b. Quadratic Probing <br> 
+
+c. Double Hashing <br>
 
