@@ -1,0 +1,29 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following is the correct linear probing function definition?",
+            "answers": {
+                "a": "F(i) = 1",
+                "b": "F(i) = i",
+                "c": "F(i) = i*i",
+                "d": "F(i) = i +1"
+            },
+            "correctAnswer": "b",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. In linear probing, what is the hash function ?",
+            "answers": {
+                "a": "H(x) = key mod table size",
+                "b": "H(x) = (key + F(i^2)) mod table size",
+                "c": "H(x) = (key + F(i)) mod table size",
+                "d": "H(x) = (key + F(i^3) mod table size"
+            },
+            "correctAnswer": "c",
+            "explanations": {},
+            "difficulty": "advanced"
+        }
+    ]
+}
