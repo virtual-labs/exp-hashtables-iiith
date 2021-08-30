@@ -1,0 +1,31 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following is a use of a Hash Table ? ",
+            "answers": {
+                "a": "Storing data in an associative Manner",
+                "b": "Sorting the given data.",
+                "c": "Getting Unique Values in the given data.",
+                "d": "None of the Above."
+            },
+            "correctAnswer": "a",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Which of the following is the correct representation of hash table after doing the mentioned operations ? (Assume hash table size = 5 and all values are initialized as 0)<br>Insert(25);<br>Insert(26)<br>Remove(25);<br>Insert(50);",
+            "answers": {
+                "a": "[0,0,0,0,0]",
+                "b": "[25,26,0,0,0]",
+                "c": "[50,26,0,0,0]",
+                "d": "[25,50,0,0,0]"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "Initially the hash table is [0,0,0,0,0]<br>After 1st operation Insert(25) -> [25,0,0,0,0]<br>2nd operation Insert(26) -> [25,26,0,0,0]<br>3rd operation Remove(25) -> [0,26,0,0,0]<br>4th operation Insert(50) -> [50,26,0,0,0]"
+            },
+            "difficulty": "beginner"
+        }
+    ]
+}

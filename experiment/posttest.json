@@ -1,1 +1,47 @@
-[{"question":"1. Consider a hash table of size seven, with starting index zero, and a hash function (3x + 4)mod7. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using closed hashing? Note that ‘_’ denotes an empty location in the table.","answers":{"a":"8, _, _, _, _, _, 10","b":" 1, 8, 10, _, _, _, 3","c":"1, _, _, _, _, _,3","d":"1, 10, 8, _, _, _, 3"},"correctAnswer":"b"},{"question":"2. Consider a hash table of size seven, with starting index zero, and a hash function (3x + 4)mod7. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using closed hashing? Note that ‘_’ denotes an empty location in the table. ","answers":{"a":"8, _, _, _, _, _, 10 ","b":"1, 8, 10, _, _, _, 3","c":"1, _, _, _, _, _,3 ","d":"1, 10, 8, _, _, _, 3"},"correctAnswer":"b"},{"question":"3. Given the following input (4322, 1334, 1471, 9679, 1989, 6171, 6173, 4199) and the hash function x mod 10, which of the following statements are true? i. 9679, 1989, 4199 hash to the same value ii. 1471, 6171 has to the same value iii. All elements hash to the same value iv. Each element hashes to a different value. ","answers":{"a":"i only","b":" ii only ","c":"i and ii only","d":" iii or iv"},"correctAnswer":"c"},{"question":"4. What is the worst case scenario for bubble sort?Consider a hash table with 100 slots. Collisions are resolved using chaining. Assuming simple uniform hashing, what is the probability that the first 3 slots are unfilled after the first 3 insertions?","answers":{"a":"(97 × 97 × 97)/100^3","b":"(99 × 98 × 97)/100^3","c":"(97 × 96 × 95)/100^3","d":"(97 × 96 × 95)/(3! × 100^3)"},"correctAnswer":"a"},{"question":"5. Which one of the following hash functions on integers will distribute keys most uniformly over 10 buckets numbered 0 to 9 for i ranging from 0 to 2020? ","answers":{"a":"h(i) =i^2 mod 10","b":"h(i) =i^3 mod 10","c":"h(i) = (11 ∗ i^2) mod 10  ","d":"h(i) = (12 ∗ i) mod 10"},"correctAnswer":"b"}]
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. In a linear-probing hash table, which of the following circumstances results in linear running time for a random search hit?",
+            "answers": {
+                "a": "All keys hash to same index",
+                "b": "All keys hash to different indices",
+                "c": "All keys hash to an even-numbered index",
+                "d": "All keys hash to different even-numbered indices"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "If all keys hash to the same location, finding the i-th inserted key will require I lookups. Since the i-th key is random, the probability of looking it up is 1/n.",
+                "b": "If all keys hash to different locations, the inserted key can be found in constant time.",
+                "c": "If all keys hash to an even-numbered index, we can't say about the running time as they can all be mapped to the same index or different even-numbered indexes.",
+                "d": "If all keys hash to different locations, the inserted key can be found in constant time."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "2. In a hash table, what is the ideal definition of a collision?",
+            "answers": {
+                "a": "Two entries are identical except for their keys",
+                "b": "Two entries with different data have the exact same key",
+                "c": "Two entries with different keys have the same exact hash value",
+                "d": "Two entries with the exact same key have different hash values"
+            },
+            "correctAnswer": "c",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. Which of the following statement(s) is TRUE?",
+            "answers": {
+                "a": "A hash function takes a message of arbitrary length and generates a fixed length code.",
+                "b": "A hash function takes a message of fixed length and generates a code of variable length.",
+                "c": "Both",
+                "d": "None of these"
+            },
+            "correctAnswer": "a",
+            "explanations": {},
+            "difficulty": "intermediate"
+        }
+    ]
+}
+   

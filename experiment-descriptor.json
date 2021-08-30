@@ -24,7 +24,7 @@
       "unit-type": "task",
       "label": "Pre Test Quiz",
       "content-type": "assesment",
-      "source": "pretest.js",
+      "source": "pretest.json",
       "target": "pretest.html"
     },
     {
@@ -70,7 +70,7 @@
          "unit-type": "task",
          "label": "Quiz",
          "content-type": "assesment",
-         "source": "hash-tables-quiz.js",
+         "source": "hash-tables-quiz.json",
          "target": "hash-tables-quiz.html"
        }
       
@@ -111,7 +111,7 @@
          "unit-type": "task",
          "label": "Quiz",
          "content-type": "assesment",
-         "source": "collision-resolution-quiz.js",
+         "source": "collision-resolution-quiz.json",
          "target": "collision-resolution-quiz.html"
        }
       ]
@@ -157,7 +157,7 @@
           "unit-type": "task",
           "label": "Quiz",
           "content-type": "assesment",
-          "source": "linear-probing-quiz.js",
+          "source": "linear-probing-quiz.json",
           "target": "linear-probing-quiz.html"
         }
       ]
@@ -197,7 +197,7 @@
           "unit-type": "task",
           "label": "Quiz",
           "content-type": "assesment",
-          "source": "quadratic-probing-quiz.js",
+          "source": "quadratic-probing-quiz.json",
           "target": "quadratic-probing-quiz.html"
         }
       ]
@@ -237,7 +237,7 @@
           "unit-type": "task",
           "label": "Quiz",
           "content-type": "assesment",
-          "source": "double-hashing.js",
+          "source": "double-hashing.json",
           "target": "double-hashing.html"
         }
       ]
@@ -247,7 +247,7 @@
       "unit-type": "task",
       "label": "Post Test Quiz",
       "content-type": "assesment",
-      "source": "posttest.js",
+      "source": "posttest.json",
       "target": "posttest.html"
     },
        
