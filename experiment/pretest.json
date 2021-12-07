@@ -1,0 +1,77 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following is an advantage of using arrays over linked lists?<br><pre>  1) Accessing elements at specific positions is faster.<br>  2) The size of the array is fixed.<br>  3) For the same number of elements, array uses less memory as compared to linked list.</pre> ",
+            "answers": {
+                "a": "1 only",
+                "b": "1 and 2",
+                "c": "1 and 3",
+                "d": "3 only"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "1. Accessing elements at a specific position is faster in an array over linked list as accessing element at some position of linked list requires the iteration through all the elements of linked list.",
+                "b": "2. The size of an array is fixed. Thus we cannot add more elements to an array once the size defined during declaration of array is reached.",
+                "c": "3. For the same number of elements, linked lists use more memory as a reference to the next node is also stored along with the data"
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. What will be the output of the following function ?(head is the first node of a linked list)<br><pre><code>void traverse(struct node* head)<br>{<br>    printf(\"%d  \", head->data);<br>     head = head ->next;<br>    traverse(head)<br>}</code></pre>",
+            "answers": {
+                "a": "prints all the nodes of linked list",
+                "b": "prints the value of head node",
+                "c": "Runtime error",
+                "d": "None of these"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "No e"
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. What is the time complexity of inserting an element in start and end of a singly linked list respectively?(N = number of elements currently in Linked List)",
+            "answers": {
+                "a": "O(N), O(N)",
+                "b": "O(1), O(N)",
+                "c": "O(1), O(1)",
+                "d": "O(N), O(1)"
+            },
+            "correctAnswer": "b",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. In which of the following implementations Linked lists can be used ? ",
+            "answers": {
+                "a": "To implement file systems.",
+                "b": "For separating chaining in hash-tables",
+                "c": "To implement non-binary trees.",
+                "d": "All of the mentioned."
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "Each file is a linked list of disk blocks which need not be contiguous. The disk blocks can be scattered anywhere on the disk.The directory entry contains a pointer to the starting and the ending file block. Each block contains a pointer to the next block occupied by the file.",
+                "b": "In separate chaining, each element of the hash table is a linked list. To store an element in the hash table you must insert it into a specific linked list. If there is any collision (i.e. two different elements have the same hash value) then store both the elements in the same linked list.",
+                "c": "Non-Binary tree can be implemented using a node type that has  a next pointer and a child pointer.The node's next pointer is used to point to the next sibling child, implemented as a simple linked list. The node's child pointer is used to point to the first child of the node."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "5. <pre><code>def f(n):<br>     If n == 0 or n == 1: return 1<br>     return f(n-1) + f(n-2)</code></pre><br>Time complexity of this program:",
+            "answers": {
+                "a": "O(log n)",
+                "b": "O(n)",
+                "c": "O(n^2)",
+                "d": "O(2^n)"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "d": "The function returns the nth number of the fibonacci sequence. Upon solving the recurrence relation: <br><code>T(n) = T(n-1) + T(n-2)</code><br>we get<br><code>T(n) = O(2^n -1 ) + O(2^n -2) + C</code><br>So time complexity = O(2^n)"
+            },
+            "difficulty": "advanced"
+        }
+    ]
+}
