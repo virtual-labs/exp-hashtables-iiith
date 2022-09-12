@@ -47,11 +47,14 @@
           </ul>
         </div>
       </div>
-      
+     
       <div id="legend-comment-wrapper">      
          <ul class="legend">
-           <li><span class="green"></span> Element Added/Found</li>
-           <li><span class="red"></span> Element Not Found</li>
+          <table>
+            <tr><td><b>Legend:</b></td></tr>
+            <tr><td><span class="green" id="correct_box"></span>&ensp;Element Added/Found</td></tr>
+            <tr><td><span class="red" id="incorrect_box"></span>&ensp;Element Not Found</td></tr>
+          </table>
          </ul>
          
          <div class="comment-box">
@@ -59,6 +62,7 @@
              <b>Formula:</b><br>hash(key) = key % TABLE_SIZE <br>Here TABLE_SIZE = 10 <br>So, Index = key % 10<br>Here key
              is any element to be hashed.
            </div>
+          
            <div id="calculationbox">
              <b>Step:</b>
              <div class="status" id="status"></div>
@@ -66,9 +70,11 @@
              <div class="status" id="status2"></div>
              <div class="status" id="status3"></div>
            </div>
+           
          </div>
          
       </div>
+      
       <div class="buttons-wrapper">
         <input class="text-box" id="value-box" type="number" min="1" max="1000" required>
         <input class="button-input" id="insertbutton" type="button" value="Insert">
