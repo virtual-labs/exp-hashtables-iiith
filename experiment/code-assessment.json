@@ -11,7 +11,8 @@
             ],
             "expected": [true, false, true, false, true],
             "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted.",
-            "expected description": "An array of boolean values indicating whether each integer in inp2 can be inserted into the hash table without violating the hash table rules."
+            "expected description": "An array of boolean values indicating whether each integer in inp2 can be inserted into the hash table without violating the hash table rules.",
+            "difficulty": "beginner"
         },
         {
             "problem name": "Hash Table Insertion with Linear Probing",
@@ -22,7 +23,8 @@
             ],
             "expected": [10, 11, 15, 8, 5],
             "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using linear probing for collision resolution.",
-            "expected description": "An array representing the hash table after all insertions, with linear probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity."
+            "expected description": "An array representing the hash table after all insertions, with linear probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity.",
+            "difficulty": "intermediate"
         },
         {
             "problem name": "Hash Table Insertion with Quadratic Probing",
@@ -33,7 +35,8 @@
             ],
             "expected": [10, 22, 20, 32, 17],
             "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using quadratic probing for collision resolution.",
-            "expected description": "An array representing the hash table after all insertions, with quadratic probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity."
+            "expected description": "An array representing the hash table after all insertions, with quadratic probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity.",
+            "difficulty": "intermediate"
         }
     ]
 }
