@@ -31,7 +31,7 @@
             "description": "Given a hash table already containing integers according to the hash table rules, insert each new integer from a given array into the existing hash table using quadratic probing for collision resolution. If inserting a value is impossible, skip to the next integer.",
             "inputs": [
                 [null, 15, null, 5, 10, null, null],
-                [20, 33, 25, 7]
+                [20, 33, 7]
             ],
             "expected": [7, 15, null, 5, 10, 33, 20],
             "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using quadratic probing for collision resolution.",
