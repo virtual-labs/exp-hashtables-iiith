@@ -1,0 +1,11 @@
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/code-assessment.json'
+  ],
+  files: [
+    '/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/code-assessment.json'
+  ],
+  '$0': 'validate'
+}
+Validated true

@@ -1,0 +1,33 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is it called when numerous items compete for the same bucket in a hash table?",
+            "answers": {
+                "a": "Diffusion",
+                "b": "Replication",
+                "c": "Collision",
+                "d": "None of the mentioned"
+            },
+            "correctAnswer": "c",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. What are the techniques to avoid collision ?",
+            "answers": {
+                "a": "Separate Chaining Method",
+                "b": "Linear Probing",
+                "c": "Quadratic Probing",
+                "d": "All of the mentioned"
+            },
+            "correctAnswer": "d",
+            "explanations": {
+                "a": "In separate chaining, each element of the hash table is a linked list. To store an element in the hash table you must insert it into a specific linked list. If there is any collision (i.e. two different elements have the same hash value) then store both the elements in the same linked list.",
+                "b": "In linear probing, we linearly probe for the next slot available in the hash table.",
+                "c": "In quadratic  probing, we look for the i^2'th slot in the i'th iteration if the given hash value x collides in the hash table."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. In Double Hashing, which of the following hash function is used?",
+            "answers": {
+                "a": "(h1(k) \u2013 i*h2(k))mod m",
+                "b": "h1(k) + h2(k)",
+                "c": "(h1(k) + i*h2(k))mod m",
+                "d": "(h1(k) + h2(k))mod m"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "c": "Double hashing uses a hash function of the form (h1(k) + i*h2(k))mod m where h1 and h2 are auxiliary hash functions and m is the size of the hash table."
+            },
+            "difficulty": "advanced"
+        },
+        {
+            "question": "2. Which technique has the greatest number of probe sequences?",
+            "answers": {
+                "a": "Quadratic probing",
+                "b": "Linear probing",
+                "c": "Double hashing",
+                "d": "Closed hashing"
+            },
+            "correctAnswer": "c",
+            "explanations": {},
+            "difficulty": "intermediate"
+        }
+    ]
+}
+    
