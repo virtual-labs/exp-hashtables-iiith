@@ -2,6 +2,13 @@
   "unit-type": "lu",
   "label": "Hash Tables",
   "basedir": ".",
+  "code-assessment": {
+    "include": true,
+    "languages": [
+      "javascript"
+    ],
+    "position": 9
+  },
   "units": [
     {
       "unit-type": "aim"
