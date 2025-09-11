@@ -1,5 +1,5 @@
 ### Hash Tables Concept and Algorithm
-<iframe src="https://youtu.be/_YF_3DZIdwQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/_YF_3DZIdwQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### Need of Hashing
 
