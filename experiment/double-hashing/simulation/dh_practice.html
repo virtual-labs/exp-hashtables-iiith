@@ -59,8 +59,8 @@
          
          <div class="comment-box">
            <div id="formulabox" class="comment-box">
-             <b>Formula:</b><br> hash1(key) = key % 10 <br>hash2(key) = 5 - (key % 5) <br>Double Hashing will be done using:
-             (hash1(key) + i * hash2(key)) % 10
+              <b>Formula:</b><br> hash1(key) = key % 10 <br>hash2(key) = 7 - (key % 7) <br>Double Hashing will be done using:
+            (hash1(key) + i * hash2(key)) % 10
            </div>
            <div id="calculationbox">
              <b>Step:</b>
@@ -68,11 +68,12 @@
              <div class="status" id="status1"></div>
              <div class="status" id="status2"></div>
              <div class="status" id="status3"></div>
-           </div>
+           </div>           
          </div>
          
       </div>
       <div id="fourthStatus" style="margin: 20px auto; font-weight: bold; text-align: center; width: 100%;"></div>
+      <div id="warningStatus" style="margin-top:10px;"></div>
       <div class="buttons-wrapper">
         <input class="text-box" id="value-box" type="number" min="1" max="1000" required>
         <input class="button-input" id="insertbutton" type="button" value="Insert">
