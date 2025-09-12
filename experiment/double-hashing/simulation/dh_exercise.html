@@ -10,11 +10,19 @@
       <button class="collapsible"> Instructions </button>
       <div class="content">
         <ul>
-          <li>Type the numbers in the correct places in the hash table.</li>
-          <li>Click on Submit once you are done.</li>
-          <li>Click Reset button to reset the artefact.</li> 
-          <li>Click New Question button to generate new questions.</li>
+      <li>Type the numbers in the correct places in the hash table.</li>
+      <li>Click on <b>Submit</b> once you are done.</li>
+      <li>Click <b>Reset</b> to clear the table and try again.</li>
+      <li>Click <b>New Question</b> to generate a new exercise.</li>
+      <li>
+        <b>Color meanings:</b>
+        <ul>
+          <li><span style="background:#a4c652; padding:0 10px; border-radius:3px;">&nbsp;</span> Green: Correctly filled box</li>
+          <li><span style="background:red; padding:0 10px; border-radius:3px;">&nbsp;</span> Red: Incorrect or missing value (box should be filled but is incorrect or empty)</li>
+          <li><span style="background:white; border:1px solid #ccc; padding:0 10px; border-radius:3px;">&nbsp;</span> White: Box is empty and expected to be empty</li>
         </ul>
+      </li>
+    </ul>
       </div>
     </div>
     
@@ -58,8 +66,10 @@
        <ul class="legend" id="exercisestatus">
         <table>
           <tr><td><b>Legend:</b></td></tr>
-          <tr><td><span class="green" id="correct_box"></span>&ensp;Correctly Filled Boxes</td></tr>
-          <tr><td><span class="red" id="incorrect_box"></span>&ensp;Incorrectly Filled Boxes</td></tr>
+             <tr><td><span class="green" id="correct_box"></span>&ensp;Correctly Filled Boxes</td></tr>
+             <tr><td><span class="red" id="incorrect_box"></span>&ensp;Incorrect or Missing Value</td></tr>
+             <tr><td><span class="white"></span>&ensp;Box is empty and expected to be empty</td></tr>
+
         </table>
        </ul>
        
