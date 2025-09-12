@@ -1,0 +1,381 @@
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/double-hashing/simulation/js/exercise_artefacts.js
+  24:7   warning  'method' is already defined  no-redeclare
+  32:8   warning  'i' is not defined           no-undef
+  32:15  warning  'i' is not defined           no-undef
+  32:23  warning  'i' is not defined           no-undef
+  33:12  warning  'i' is not defined           no-undef
+  33:41  warning  'i' is not defined           no-undef
+  40:8   warning  'i' is not defined           no-undef
+  40:15  warning  'i' is not defined           no-undef
+  40:23  warning  'i' is not defined           no-undef
+  41:16  warning  'i' is not defined           no-undef
+  41:31  warning  'i' is not defined           no-undef
+  41:50  warning  'i' is not defined           no-undef
+  42:25  warning  'i' is not defined           no-undef
+  46:8   warning  'i' is not defined           no-undef
+  46:15  warning  'i' is not defined           no-undef
+  46:23  warning  'i' is not defined           no-undef
+  47:40  warning  'i' is not defined           no-undef
+  48:24  warning  'i' is not defined           no-undef
+  48:37  warning  'i' is not defined           no-undef
+  50:24  warning  'i' is not defined           no-undef
+  50:44  warning  'i' is not defined           no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/double-hashing/simulation/js/practice_artefacts.js
+  248:10  error  Parsing error: Identifier 'jump' has already been declared
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/double-hashing/simulation/js/realization.js
+   1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+  57:2  warning  Duplicate key 'Quadratic Probing Demonstration'          no-dupe-keys
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/hash-tables/simulation/js/exercise_artefacts.js
+  18:4   warning  Unnecessary semicolon        no-extra-semi
+  19:2   warning  Unnecessary semicolon        no-extra-semi
+  24:7   warning  'method' is already defined  no-redeclare
+  36:8   warning  'i' is not defined           no-undef
+  36:15  warning  'i' is not defined           no-undef
+  36:23  warning  'i' is not defined           no-undef
+  37:12  warning  'i' is not defined           no-undef
+  37:41  warning  'i' is not defined           no-undef
+  48:8   warning  'i' is not defined           no-undef
+  48:15  warning  'i' is not defined           no-undef
+  48:23  warning  'i' is not defined           no-undef
+  49:16  warning  'i' is not defined           no-undef
+  49:31  warning  'i' is not defined           no-undef
+  50:22  warning  'i' is not defined           no-undef
+  52:22  warning  'i' is not defined           no-undef
+  56:8   warning  'i' is not defined           no-undef
+  56:15  warning  'i' is not defined           no-undef
+  56:23  warning  'i' is not defined           no-undef
+  57:40  warning  'i' is not defined           no-undef
+  58:24  warning  'i' is not defined           no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/hash-tables/simulation/js/practice_artefacts.js
+    5:6   warning  Unnecessary semicolon              no-extra-semi
+    6:2   warning  Unnecessary semicolon              no-extra-semi
+   10:8   warning  'i' is not defined                 no-undef
+   10:15  warning  'i' is not defined                 no-undef
+   10:23  warning  'i' is not defined                 no-undef
+   11:27  warning  'i' is not defined                 no-undef
+   25:5   warning  'hash2' is not defined             no-undef
+   26:31  warning  'hash2' is not defined             no-undef
+   31:8   warning  'i' is not defined                 no-undef
+   31:15  warning  'i' is not defined                 no-undef
+   31:23  warning  'i' is not defined                 no-undef
+   32:5   warning  'iPosition' is not defined         no-undef
+   32:41  warning  'i' is not defined                 no-undef
+   33:5   warning  'iPosition' is not defined         no-undef
+   34:15  warning  'i' is not defined                 no-undef
+   35:7   warning  'iPosition' is not defined         no-undef
+   35:31  warning  'i' is not defined                 no-undef
+   43:3   warning  'position' is not defined          no-undef
+   44:3   warning  'originalPosition' is not defined  no-undef
+   45:3   warning  'firstStatus' is not defined       no-undef
+   46:3   warning  'secondStatus' is not defined      no-undef
+   47:3   warning  'thirdStatus' is not defined       no-undef
+   48:3   warning  'fourthStatus' is not defined      no-undef
+   50:3   warning  'firstStatus' is not defined       no-undef
+   51:3   warning  'secondStatus' is not defined      no-undef
+   52:3   warning  'thirdStatus' is not defined       no-undef
+   53:3   warning  'fourthStatus' is not defined      no-undef
+   55:3   warning  'j' is not defined                 no-undef
+   56:3   warning  'temp' is not defined              no-undef
+   57:3   warning  'hash2' is not defined             no-undef
+   58:16  warning  'position' is not defined          no-undef
+   59:5   warning  'firstStatus' is not defined       no-undef
+   60:5   warning  'secondStatus' is not defined      no-undef
+   61:5   warning  'thirdStatus' is not defined       no-undef
+   62:5   warning  'fourthStatus' is not defined      no-undef
+   64:15  warning  'position' is not defined          no-undef
+   65:7   warning  'firstStatus' is not defined       no-undef
+   66:7   warning  'secondStatus' is not defined      no-undef
+   67:7   warning  'thirdStatus' is not defined       no-undef
+   68:7   warning  'fourthStatus' is not defined      no-undef
+   70:7   warning  'firstStatus' is not defined       no-undef
+   74:11  warning  'secondStatus' is not defined      no-undef
+   75:11  warning  'secondStatus' is not defined      no-undef
+   75:48  warning  'temp' is not defined              no-undef
+   78:11  warning  'secondStatus' is not defined      no-undef
+   78:45  warning  'temp' is not defined              no-undef
+   82:9   warning  'thirdStatus' is not defined       no-undef
+   82:53  warning  'position' is not defined          no-undef
+   84:9   warning  'thirdStatus' is not defined       no-undef
+   84:62  warning  'position' is not defined          no-undef
+   86:9   warning  'thirdStatus' is not defined       no-undef
+   86:64  warning  'position' is not defined          no-undef
+   88:9   warning  'thirdStatus' is not defined       no-undef
+   88:68  warning  'position' is not defined          no-undef
+   92:9   warning  'fourthStatus' is not defined      no-undef
+   94:9   warning  'fourthStatus' is not defined      no-undef
+   96:12  warning  'position' is not defined          no-undef
+   98:7   warning  'temp' is not defined              no-undef
+  100:9   warning  'position' is not defined          no-undef
+  100:33  warning  'originalPosition' is not defined  no-undef
+  100:51  warning  'temp' is not defined              no-undef
+  104:7   warning  'firstStatus' is not defined       no-undef
+  105:7   warning  'secondStatus' is not defined      no-undef
+  106:7   warning  'thirdStatus' is not defined       no-undef
+  107:7   warning  'fourthStatus' is not defined      no-undef
+  109:7   warning  'firstStatus' is not defined       no-undef
+  112:9   warning  'secondStatus' is not defined      no-undef
+  112:43  warning  'temp' is not defined              no-undef
+  115:9   warning  'thirdStatus' is not defined       no-undef
+  115:53  warning  'position' is not defined          no-undef
+  117:9   warning  'thirdStatus' is not defined       no-undef
+  117:62  warning  'position' is not defined          no-undef
+  119:9   warning  'thirdStatus' is not defined       no-undef
+  119:64  warning  'position' is not defined          no-undef
+  121:9   warning  'thirdStatus' is not defined       no-undef
+  121:68  warning  'position' is not defined          no-undef
+  125:9   warning  'fourthStatus' is not defined      no-undef
+  126:9   warning  'fourthStatus' is not defined      no-undef
+  127:14  warning  'position' is not defined          no-undef
+  129:9   warning  'fourthStatus' is not defined      no-undef
+  130:9   warning  'fourthStatus' is not defined      no-undef
+  131:14  warning  'position' is not defined          no-undef
+  133:9   warning  'fourthStatus' is not defined      no-undef
+  134:9   warning  'fourthStatus' is not defined      no-undef
+  136:15  warning  'position' is not defined          no-undef
+  137:15  warning  'position' is not defined          no-undef
+  138:9   warning  'fourthStatus' is not defined      no-undef
+  139:9   warning  'fourthStatus' is not defined      no-undef
+  140:14  warning  'position' is not defined          no-undef
+  145:13  warning  'position' is not defined          no-undef
+  146:5   warning  'firstStatus' is not defined       no-undef
+  147:5   warning  'secondStatus' is not defined      no-undef
+  148:5   warning  'thirdStatus' is not defined       no-undef
+  149:5   warning  'fourthStatus' is not defined      no-undef
+  150:5   warning  'firstStatus' is not defined       no-undef
+  151:5   warning  'secondStatus' is not defined      no-undef
+  152:5   warning  'thirdStatus' is not defined       no-undef
+  154:5   warning  'firstStatus' is not defined       no-undef
+  158:9   warning  'secondStatus' is not defined      no-undef
+  159:9   warning  'secondStatus' is not defined      no-undef
+  159:46  warning  'temp' is not defined              no-undef
+  162:9   warning  'secondStatus' is not defined      no-undef
+  162:43  warning  'temp' is not defined              no-undef
+  166:7   warning  'thirdStatus' is not defined       no-undef
+  166:51  warning  'position' is not defined          no-undef
+  168:7   warning  'thirdStatus' is not defined       no-undef
+  168:60  warning  'position' is not defined          no-undef
+  170:7   warning  'thirdStatus' is not defined       no-undef
+  170:62  warning  'position' is not defined          no-undef
+  172:7   warning  'thirdStatus' is not defined       no-undef
+  172:66  warning  'position' is not defined          no-undef
+  175:7   warning  'fourthStatus' is not defined      no-undef
+  176:7   warning  'fourthStatus' is not defined      no-undef
+  177:13  warning  'position' is not defined          no-undef
+  178:13  warning  'position' is not defined          no-undef
+  179:12  warning  'position' is not defined          no-undef
+  181:7   warning  'fourthStatus' is not defined      no-undef
+  182:7   warning  'fourthStatus' is not defined      no-undef
+  183:12  warning  'position' is not defined          no-undef
+  185:7   warning  'fourthStatus' is not defined      no-undef
+  186:7   warning  'fourthStatus' is not defined      no-undef
+  187:12  warning  'position' is not defined          no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/hash-tables/simulation/js/realization.js
+   1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+  57:2  warning  Duplicate key 'Quadratic Probing Demonstration'          no-dupe-keys
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/linear-probing/simulation/js/exercise_artefacts.js
+  18:4   warning  Unnecessary semicolon        no-extra-semi
+  19:2   warning  Unnecessary semicolon        no-extra-semi
+  24:7   warning  'method' is already defined  no-redeclare
+  36:8   warning  'i' is not defined           no-undef
+  36:15  warning  'i' is not defined           no-undef
+  36:23  warning  'i' is not defined           no-undef
+  37:12  warning  'i' is not defined           no-undef
+  37:41  warning  'i' is not defined           no-undef
+  48:8   warning  'i' is not defined           no-undef
+  48:15  warning  'i' is not defined           no-undef
+  48:23  warning  'i' is not defined           no-undef
+  49:16  warning  'i' is not defined           no-undef
+  49:31  warning  'i' is not defined           no-undef
+  50:22  warning  'i' is not defined           no-undef
+  52:22  warning  'i' is not defined           no-undef
+  56:8   warning  'i' is not defined           no-undef
+  56:15  warning  'i' is not defined           no-undef
+  56:23  warning  'i' is not defined           no-undef
+  57:40  warning  'i' is not defined           no-undef
+  58:24  warning  'i' is not defined           no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/linear-probing/simulation/js/practice_artefacts.js
+  10:8   warning  'i' is not defined                no-undef
+  10:15  warning  'i' is not defined                no-undef
+  10:23  warning  'i' is not defined                no-undef
+  10:50  warning  'i' is not defined                no-undef
+  18:10  warning  'jump' is defined but never used  no-unused-vars
+  24:5   warning  'hash2' is not defined            no-undef
+  25:31  warning  'hash2' is not defined            no-undef
+  30:8   warning  'i' is not defined                no-undef
+  30:15  warning  'i' is not defined                no-undef
+  30:23  warning  'i' is not defined                no-undef
+  31:45  warning  'i' is not defined                no-undef
+  33:15  warning  'i' is not defined                no-undef
+  33:50  warning  'i' is not defined                no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/linear-probing/simulation/js/realization.js
+   1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+  57:2  warning  Duplicate key 'Quadratic Probing Demonstration'          no-dupe-keys
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/posttest.js
+  18:6   warning  'letter' is not defined  no-undef
+  22:63  warning  'letter' is not defined  no-undef
+  23:3   warning  'letter' is not defined  no-undef
+  24:27  warning  'letter' is not defined  no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/quadratic-probing/simulation/js/exercise_artefacts.js
+  18:4   warning  Unnecessary semicolon        no-extra-semi
+  19:2   warning  Unnecessary semicolon        no-extra-semi
+  24:7   warning  'method' is already defined  no-redeclare
+  36:8   warning  'i' is not defined           no-undef
+  36:15  warning  'i' is not defined           no-undef
+  36:23  warning  'i' is not defined           no-undef
+  37:12  warning  'i' is not defined           no-undef
+  37:41  warning  'i' is not defined           no-undef
+  48:8   warning  'i' is not defined           no-undef
+  48:15  warning  'i' is not defined           no-undef
+  48:23  warning  'i' is not defined           no-undef
+  49:16  warning  'i' is not defined           no-undef
+  49:31  warning  'i' is not defined           no-undef
+  50:22  warning  'i' is not defined           no-undef
+  52:22  warning  'i' is not defined           no-undef
+  56:8   warning  'i' is not defined           no-undef
+  56:15  warning  'i' is not defined           no-undef
+  56:23  warning  'i' is not defined           no-undef
+  57:40  warning  'i' is not defined           no-undef
+  58:24  warning  'i' is not defined           no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/quadratic-probing/simulation/js/practice_artefacts.js
+    5:6   warning  Unnecessary semicolon              no-extra-semi
+    6:2   warning  Unnecessary semicolon              no-extra-semi
+   10:8   warning  'i' is not defined                 no-undef
+   10:15  warning  'i' is not defined                 no-undef
+   10:23  warning  'i' is not defined                 no-undef
+   11:27  warning  'i' is not defined                 no-undef
+   25:5   warning  'hash2' is not defined             no-undef
+   26:31  warning  'hash2' is not defined             no-undef
+   31:8   warning  'i' is not defined                 no-undef
+   31:15  warning  'i' is not defined                 no-undef
+   31:23  warning  'i' is not defined                 no-undef
+   32:5   warning  'iPosition' is not defined         no-undef
+   32:41  warning  'i' is not defined                 no-undef
+   33:5   warning  'iPosition' is not defined         no-undef
+   34:15  warning  'i' is not defined                 no-undef
+   35:7   warning  'iPosition' is not defined         no-undef
+   35:31  warning  'i' is not defined                 no-undef
+   43:3   warning  'position' is not defined          no-undef
+   44:3   warning  'originalPosition' is not defined  no-undef
+   45:3   warning  'firstStatus' is not defined       no-undef
+   46:3   warning  'secondStatus' is not defined      no-undef
+   47:3   warning  'thirdStatus' is not defined       no-undef
+   48:3   warning  'fourthStatus' is not defined      no-undef
+   50:3   warning  'firstStatus' is not defined       no-undef
+   51:3   warning  'secondStatus' is not defined      no-undef
+   52:3   warning  'thirdStatus' is not defined       no-undef
+   53:3   warning  'fourthStatus' is not defined      no-undef
+   55:3   warning  'j' is not defined                 no-undef
+   56:3   warning  'temp' is not defined              no-undef
+   57:3   warning  'hash2' is not defined             no-undef
+   58:16  warning  'position' is not defined          no-undef
+   59:5   warning  'firstStatus' is not defined       no-undef
+   60:5   warning  'secondStatus' is not defined      no-undef
+   61:5   warning  'thirdStatus' is not defined       no-undef
+   62:5   warning  'fourthStatus' is not defined      no-undef
+   64:15  warning  'position' is not defined          no-undef
+   65:7   warning  'firstStatus' is not defined       no-undef
+   66:7   warning  'secondStatus' is not defined      no-undef
+   67:7   warning  'thirdStatus' is not defined       no-undef
+   68:7   warning  'fourthStatus' is not defined      no-undef
+   70:7   warning  'firstStatus' is not defined       no-undef
+   74:11  warning  'secondStatus' is not defined      no-undef
+   75:11  warning  'secondStatus' is not defined      no-undef
+   75:48  warning  'temp' is not defined              no-undef
+   78:11  warning  'secondStatus' is not defined      no-undef
+   78:45  warning  'temp' is not defined              no-undef
+   82:9   warning  'thirdStatus' is not defined       no-undef
+   82:53  warning  'position' is not defined          no-undef
+   84:9   warning  'thirdStatus' is not defined       no-undef
+   84:62  warning  'position' is not defined          no-undef
+   86:9   warning  'thirdStatus' is not defined       no-undef
+   86:64  warning  'position' is not defined          no-undef
+   88:9   warning  'thirdStatus' is not defined       no-undef
+   88:68  warning  'position' is not defined          no-undef
+   92:9   warning  'fourthStatus' is not defined      no-undef
+   94:9   warning  'fourthStatus' is not defined      no-undef
+   96:12  warning  'position' is not defined          no-undef
+   98:7   warning  'temp' is not defined              no-undef
+  100:9   warning  'position' is not defined          no-undef
+  100:33  warning  'originalPosition' is not defined  no-undef
+  100:51  warning  'temp' is not defined              no-undef
+  104:7   warning  'firstStatus' is not defined       no-undef
+  105:7   warning  'secondStatus' is not defined      no-undef
+  106:7   warning  'thirdStatus' is not defined       no-undef
+  107:7   warning  'fourthStatus' is not defined      no-undef
+  109:7   warning  'firstStatus' is not defined       no-undef
+  112:9   warning  'secondStatus' is not defined      no-undef
+  112:43  warning  'temp' is not defined              no-undef
+  115:9   warning  'thirdStatus' is not defined       no-undef
+  115:53  warning  'position' is not defined          no-undef
+  117:9   warning  'thirdStatus' is not defined       no-undef
+  117:62  warning  'position' is not defined          no-undef
+  119:9   warning  'thirdStatus' is not defined       no-undef
+  119:64  warning  'position' is not defined          no-undef
+  121:9   warning  'thirdStatus' is not defined       no-undef
+  121:68  warning  'position' is not defined          no-undef
+  125:9   warning  'fourthStatus' is not defined      no-undef
+  126:9   warning  'fourthStatus' is not defined      no-undef
+  127:14  warning  'position' is not defined          no-undef
+  129:9   warning  'fourthStatus' is not defined      no-undef
+  130:9   warning  'fourthStatus' is not defined      no-undef
+  131:14  warning  'position' is not defined          no-undef
+  133:9   warning  'fourthStatus' is not defined      no-undef
+  134:9   warning  'fourthStatus' is not defined      no-undef
+  136:15  warning  'position' is not defined          no-undef
+  137:15  warning  'position' is not defined          no-undef
+  138:9   warning  'fourthStatus' is not defined      no-undef
+  139:9   warning  'fourthStatus' is not defined      no-undef
+  140:14  warning  'position' is not defined          no-undef
+  145:13  warning  'position' is not defined          no-undef
+  146:5   warning  'firstStatus' is not defined       no-undef
+  147:5   warning  'secondStatus' is not defined      no-undef
+  148:5   warning  'thirdStatus' is not defined       no-undef
+  149:5   warning  'fourthStatus' is not defined      no-undef
+  150:5   warning  'firstStatus' is not defined       no-undef
+  151:5   warning  'secondStatus' is not defined      no-undef
+  152:5   warning  'thirdStatus' is not defined       no-undef
+  154:5   warning  'firstStatus' is not defined       no-undef
+  158:9   warning  'secondStatus' is not defined      no-undef
+  159:9   warning  'secondStatus' is not defined      no-undef
+  159:46  warning  'temp' is not defined              no-undef
+  162:9   warning  'secondStatus' is not defined      no-undef
+  162:43  warning  'temp' is not defined              no-undef
+  166:7   warning  'thirdStatus' is not defined       no-undef
+  166:51  warning  'position' is not defined          no-undef
+  168:7   warning  'thirdStatus' is not defined       no-undef
+  168:60  warning  'position' is not defined          no-undef
+  170:7   warning  'thirdStatus' is not defined       no-undef
+  170:62  warning  'position' is not defined          no-undef
+  172:7   warning  'thirdStatus' is not defined       no-undef
+  172:66  warning  'position' is not defined          no-undef
+  175:7   warning  'fourthStatus' is not defined      no-undef
+  176:7   warning  'fourthStatus' is not defined      no-undef
+  177:13  warning  'position' is not defined          no-undef
+  178:13  warning  'position' is not defined          no-undef
+  179:12  warning  'position' is not defined          no-undef
+  181:7   warning  'fourthStatus' is not defined      no-undef
+  182:7   warning  'fourthStatus' is not defined      no-undef
+  183:12  warning  'position' is not defined          no-undef
+  185:7   warning  'fourthStatus' is not defined      no-undef
+  186:7   warning  'fourthStatus' is not defined      no-undef
+  187:12  warning  'position' is not defined          no-undef
+
+/home/runner/work/exp-hashtables-iiith/exp-hashtables-iiith/experiment/quadratic-probing/simulation/js/realization.js
+   1:5  warning  'realizationCatalog' is assigned a value but never used  no-unused-vars
+  57:2  warning  Duplicate key 'Quadratic Probing Demonstration'          no-dupe-keys
+
+✖ 351 problems (1 error, 350 warnings)
+  0 errors and 10 warnings potentially fixable with the `--fix` option.
+

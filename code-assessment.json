@@ -1,0 +1,42 @@
+{
+    "version": 1,
+    "experiment name": "Hash Tables",
+    "problems": [
+        {
+            "problem name": "Check Hash Table Insertion Feasibility",
+            "description": "Given a hash table already containing integers according to the hash table rules, determine if each new integer from a given array can be inserted into the existing hash table using a hashing function without using open addressing. For each check, pretend to insert the integer into the array and determine if the insertion is feasible.",
+            "inputs": [
+                [null, 11, null, 8, 5],
+                [10, 15, 3, 7, 20]
+            ],
+            "expected": [true, false, false, true, false],
+            "inputs description": "Input consists of an array representing the existing hash table (inp1), where integers are placed according to the hash table rules, and an array of new integers (inp2) that need to be inserted.",
+            "expected description": "An array of boolean values indicating whether each integer in inp2 can be inserted into the hash table without violating the hash table rules.",
+            "difficulty": "beginner"
+        },
+        {
+            "problem name": "Hash Table Insertion with Linear Probing",
+            "description": "Given a hash table already containing integers according to the hash table rules, insert each new integer from a given array into the existing hash table using linear probing for collision resolution.",
+            "inputs": [
+                [null, 11, null, 8, 5],
+                [10, 15, 3, 7, 20]
+            ],
+            "expected": [10, 11, 15, 8, 5],
+            "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using linear probing for collision resolution.",
+            "expected description": "An array representing the hash table after all insertions, with linear probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity.",
+            "difficulty": "intermediate"
+        },
+        {
+            "problem name": "Hash Table Insertion with Quadratic Probing",
+            "description": "Given a hash table already containing integers according to the hash table rules, insert each new integer from a given array into the existing hash table using quadratic probing for collision resolution. If inserting a value is impossible, skip to the next integer.",
+            "inputs": [
+                [null, 15, null, 5, 10, null, null],
+                [20, 33, 7]
+            ],
+            "expected": [7, 15, null, 5, 10, 33, 20],
+            "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using quadratic probing for collision resolution.",
+            "expected description": "An array representing the hash table after all insertions, with quadratic probing used for collision resolution. If an integer cannot be inserted, it is skipped.",
+            "difficulty": "intermediate"
+        }
+    ]
+}
