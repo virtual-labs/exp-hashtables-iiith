@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "experiment name": "Hash Tables",
+  "problems": [
+    {
+      "problem name": "Check Hash Table Insertion Feasibility",
+      "description": "Implement a function to check if new integers can be inserted into an existing hash table without collision resolution (no open addressing). Use the hash function: index = key % table_size to determine where each key should be placed. For each integer in the new array, check if its calculated index position is null (empty); return true if empty, false if occupied. Example: hash table [null,11,null,8,5] with new integers [10,15,3,7,20]: 10 maps to index 0 (null, feasible=true), 15 maps to index 0 (null, but would conflict after 10, feasible=false), returns [true,false,false,true,false]. Only JavaScript is allowed.",
+      "inputs": [
+        [null, 11, null, 8, 5],
+        [10, 15, 3, 7, 20]
+      ],
+      "expected": [true, false, false, true, false],
+      "inputs description": "Input consists of an array representing the existing hash table (inp1), where integers are placed according to the hash table rules, and an array of new integers (inp2) that need to be inserted.",
+      "expected description": "An array of boolean values indicating whether each integer in inp2 can be inserted into the hash table without violating the hash table rules.",
+      "difficulty": "beginner"
+    },
+    {
+      "problem name": "Hash Table Insertion with Linear Probing",
+      "description": "Implement hash table insertion using linear probing for collision resolution. Use the hash function: index = key % table_size to find the initial position. If that position is occupied, use linear probing: check the next slot sequentially (index+1, index+2, ...) wrapping around to the beginning if needed, until an empty slot is found. Insert each integer from the new array into the hash table. Example: hash table [null,11,null,8,5] with new integers [10,15,3,7,20]: after all insertions with linear probing, the result is [10,11,15,8,5]. Only JavaScript is allowed.",
+      "inputs": [
+        [null, 11, null, 8, 5],
+        [10, 15, 3, 7, 20]
+      ],
+      "expected": [10, 11, 15, 8, 5],
+      "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using linear probing for collision resolution.",
+      "expected description": "An array representing the hash table after all insertions, with linear probing used for collision resolution. If an integer cannot be inserted, it remains in the new array for clarity.",
+      "difficulty": "intermediate"
+    },
+    {
+      "problem name": "Hash Table Insertion with Quadratic Probing",
+      "description": "Implement hash table insertion using quadratic probing for collision resolution. Use the hash function: index = key % table_size to find the initial position. If that position is occupied, use quadratic probing: try positions at (index + i^2) % table_size for i = 1, 2, 3, ... until an empty slot is found or all positions are tried. If no empty slot is found after checking all positions, skip that integer and move to the next. Example: hash table [null,15,null,5,10,null,null] with new integers [20,33,7]: after quadratic probing insertions, the result is [7,15,null,5,10,33,20]. Only JavaScript is allowed.",
+      "inputs": [
+        [null, 15, null, 5, 10, null, null],
+        [20, 33, 7]
+      ],
+      "expected": [7, 15, null, 5, 10, 33, 20],
+      "inputs description": "Input consists of an array representing the existing hash table - inp1, where integers are placed according to the hash table rules, and an array of new integers - inp2 that need to be inserted using quadratic probing for collision resolution.",
+      "expected description": "An array representing the hash table after all insertions, with quadratic probing used for collision resolution. If an integer cannot be inserted, it is skipped.",
+      "difficulty": "intermediate"
+    }
+  ]
+}

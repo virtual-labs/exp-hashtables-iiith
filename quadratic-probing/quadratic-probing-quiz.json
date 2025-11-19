@@ -1,0 +1,29 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. Which of the following is the correct quadratic probing function definition?",
+            "answers": {
+                "a": "F(i) = 1",
+                "b": "F(i) = i",
+                "c": "F(i) = i*i",
+                "d": "F(i) = i +1"
+            },
+            "correctAnswer": "c",
+            "explanations": {},
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Quadratic probing belongs to which of the following schemes ?",
+            "answers": {
+                "a": "Rehashing",
+                "b": "Extended hashing",
+                "c": "Separate chaining",
+                "d": "Open addressing"
+            },
+            "correctAnswer": "d",
+            "explanations": {},
+            "difficulty": "intermediate"
+        }
+    ]
+}
