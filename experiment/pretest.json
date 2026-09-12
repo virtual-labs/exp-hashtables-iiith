@@ -1,77 +1,158 @@
 {
-    "version": 2.0,
-    "questions": [
-        {
-            "question": "1. Which of the following is an advantage of using arrays over linked lists?<br><pre>  1) Accessing elements at specific positions is faster.<br>  2) The size of the array is fixed.<br>  3) For the same number of elements, array uses less memory as compared to linked list.</pre> ",
-            "answers": {
-                "a": "1 only",
-                "b": "1 and 2",
-                "c": "1 and 3",
-                "d": "3 only"
-            },
-            "correctAnswer": "c",
-            "explanations": {
-                "a": "1. Accessing elements at a specific position is faster in an array over linked list as accessing element at some position of linked list requires the iteration through all the elements of linked list.",
-                "b": "2. The size of an array is fixed. Thus we cannot add more elements to an array once the size defined during declaration of array is reached.",
-                "c": "3. For the same number of elements, linked lists use more memory as a reference to the next node is also stored along with the data"
-            },
-            "difficulty": "intermediate"
-        },
-        {
-            "question": "2. What will be the output of the following function ?(head is the first node of a linked list)<br><pre><code>void traverse(struct node* head)<br>{<br>    printf(\"%d  \", head->data);<br>     head = head ->next;<br>    traverse(head)<br>}</code></pre>",
-            "answers": {
-                "a": "prints all the nodes of linked list",
-                "b": "prints the value of head node",
-                "c": "Runtime error",
-                "d": "None of these"
-            },
-            "correctAnswer": "c",
-            "explanations": {
-                "a": "No e"
-            },
-            "difficulty": "intermediate"
-        },
-        {
-            "question": "3. What is the time complexity of inserting an element in start and end of a singly linked list respectively?(N = number of elements currently in Linked List)",
-            "answers": {
-                "a": "O(N), O(N)",
-                "b": "O(1), O(N)",
-                "c": "O(1), O(1)",
-                "d": "O(N), O(1)"
-            },
-            "correctAnswer": "b",
-            "explanations": {},
-            "difficulty": "beginner"
-        },
-        {
-            "question": "4. In which of the following implementations Linked lists can be used ? ",
-            "answers": {
-                "a": "To implement file systems.",
-                "b": "For separating chaining in hash-tables",
-                "c": "To implement non-binary trees.",
-                "d": "All of the mentioned."
-            },
-            "correctAnswer": "d",
-            "explanations": {
-                "a": "Each file is a linked list of disk blocks which need not be contiguous. The disk blocks can be scattered anywhere on the disk.The directory entry contains a pointer to the starting and the ending file block. Each block contains a pointer to the next block occupied by the file.",
-                "b": "In separate chaining, each element of the hash table is a linked list. To store an element in the hash table you must insert it into a specific linked list. If there is any collision (i.e. two different elements have the same hash value) then store both the elements in the same linked list.",
-                "c": "Non-Binary tree can be implemented using a node type that has  a next pointer and a child pointer.The node's next pointer is used to point to the next sibling child, implemented as a simple linked list. The node's child pointer is used to point to the first child of the node."
-            },
-            "difficulty": "beginner"
-        },
-        {
-            "question": "5. <pre><code>def f(n):<br>     If n == 0 or n == 1: return 1<br>     return f(n-1) + f(n-2)</code></pre><br>Time complexity of this program:",
-            "answers": {
-                "a": "O(log n)",
-                "b": "O(n)",
-                "c": "O(n^2)",
-                "d": "O(2^n)"
-            },
-            "correctAnswer": "d",
-            "explanations": {
-                "d": "The function returns the nth number of the fibonacci sequence. Upon solving the recurrence relation: <br><code>T(n) = T(n-1) + T(n-2)</code><br>we get<br><code>T(n) = O(2^n -1 ) + O(2^n -2) + C</code><br>So time complexity = O(2^n)"
-            },
-            "difficulty": "advanced"
-        }
-    ]
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is an advantage of using a hash table for storing key-value pairs?",
+      "answers": {
+        "a": "It always keeps the keys sorted.",
+        "b": "It can provide average-case constant-time lookup.",
+        "c": "It requires every key to have the same value.",
+        "d": "It eliminates the possibility of collisions."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A standard hash table does not maintain its keys in sorted order.",
+        "b": "Correct. With a suitable hash function and a controlled load factor, lookup in a hash table is typically O(1) on average.",
+        "c": "Incorrect. A hash table is designed to associate potentially different keys with their corresponding values.",
+        "d": "Incorrect. Different keys can produce the same hash-table index, so collisions are possible."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What happens when two different keys are mapped to the same index by a hash function?",
+      "answers": {
+        "a": "The hash table is automatically sorted.",
+        "b": "The second key is always discarded.",
+        "c": "A collision occurs and a collision-resolution method is required.",
+        "d": "The hash function becomes invalid."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Mapping two keys to the same index does not cause the hash table to become sorted.",
+        "b": "Incorrect. A collision does not necessarily mean that the second key must be discarded; collision-resolution techniques can be used.",
+        "c": "Correct. When two different keys map to the same table index, a collision occurs and the hash table must resolve it using a suitable technique.",
+        "d": "Incorrect. A collision is a normal possibility in hashing and does not by itself make the hash function invalid."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is the expected average-case time complexity of searching for a key in a well-designed hash table?",
+      "answers": {
+        "a": "$O(1)$",
+        "b": "$O(\\log n)$",
+        "c": "$O(n)$",
+        "d": "$O(n^2)$"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Under a good hash function and a suitable load factor, a hash-table search takes O(1) time on average.",
+        "b": "Incorrect. Logarithmic search is characteristic of structures such as balanced search trees rather than the expected average case of a well-designed hash table.",
+        "c": "Incorrect. A linear search may occur in an unfavorable hash-table situation, but it is not the expected average-case complexity.",
+        "d": "Incorrect. Quadratic time is not the expected average-case complexity of hash-table search."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In which of the following applications can hash tables be used?",
+      "answers": {
+        "a": "Implementing associative arrays.",
+        "b": "Implementing symbol tables.",
+        "c": "Implementing dictionaries or key-value mappings.",
+        "d": "All of the mentioned."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Hash tables are commonly used for associative arrays, so selecting only this option does not account for the other valid applications.",
+        "b": "Incorrect. Hash tables can implement symbol tables, but this is not the only valid application listed.",
+        "c": "Incorrect. Hash tables are useful for dictionaries and key-value mappings, but other listed applications are also valid.",
+        "d": "Correct. Hash tables are widely used to implement associative arrays, symbol tables, dictionaries, and other key-value mappings."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Consider a hash table containing $n$ elements. If all keys happen to be mapped to the same index and collisions are handled using separate chaining, what can be the worst-case time complexity of searching for a key?",
+      "answers": {
+        "a": "$O(\\log n)$",
+        "b": "$O(1)$",
+        "c": "$O(n)$",
+        "d": "$O(n^2)$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A chain containing all $n$ elements does not provide logarithmic search time.",
+        "b": "Incorrect. Constant-time search is the expected goal under good distribution, but it is not guaranteed when all keys collide.",
+        "c": "Correct. If all $n$ keys are placed in one chain, searching that chain can require examining O(n) elements.",
+        "d": "Incorrect. Searching a single chain containing $n$ elements does not require a quadratic number of comparisons."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "6. What is the load factor of a hash table with $n$ stored elements and table size $m$?",
+      "answers": {
+        "a": "$\\alpha = m/n$",
+        "b": "$\\alpha = n/m$",
+        "c": "$\\alpha = n+m$",
+        "d": "$\\alpha = n-m$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Reversing the number of stored elements and table size gives the reciprocal of the usual load-factor definition.",
+        "b": "Correct. The load factor is defined as $\\alpha = n/m$, where $n$ is the number of stored elements and $m$ is the table size.",
+        "c": "Incorrect. Load factor is a ratio, not the sum of the number of elements and table size.",
+        "d": "Incorrect. Subtracting the table size from the number of elements does not define the load factor."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "7. Which property is most desirable for a hash function used in a hash table?",
+      "answers": {
+        "a": "It should map every key to index 0.",
+        "b": "It should preserve the alphabetical order of keys.",
+        "c": "It should distribute keys uniformly across the table.",
+        "d": "It should always produce a unique index for every possible key."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Mapping every key to the same index would create excessive collisions.",
+        "b": "Incorrect. Preserving key order is not the primary purpose of a hash function.",
+        "c": "Correct. A good hash function distributes keys as uniformly as possible to reduce collisions and improve performance.",
+        "d": "Incorrect. A hash table usually has fewer indices than the number of possible keys, so collisions cannot always be avoided."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "8. Suppose the hash function is $h(k) = k \\bmod 10$. What index is produced for the key $37$?",
+      "answers": {
+        "a": "$3$",
+        "b": "$7$",
+        "c": "$10$",
+        "d": "$37$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The remainder after dividing 37 by 10 is not 3.",
+        "b": "Correct. Since $37 \\bmod 10 = 7$, the key is mapped to index 7.",
+        "c": "Incorrect. The modulo operation produces a remainder from 0 through 9 for a divisor of 10.",
+        "d": "Incorrect. The hash function transforms the key using the modulo operation rather than returning the original key."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "9. Why can a hash table have $O(n)$ worst-case search time even though its expected search time is often $O(1)$?",
+      "answers": {
+        "a": "Because a poor distribution of keys can cause many collisions.",
+        "b": "Because hash-table indices are always searched in sorted order.",
+        "c": "Because every hash-table operation must inspect all table positions.",
+        "d": "Because the table size is always equal to one."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. If many keys collide at the same location, a search may need to examine many entries, producing O(n) worst-case time.",
+        "b": "Incorrect. Hash tables do not require their indices or keys to be searched in sorted order.",
+        "c": "Incorrect. A well-designed hash table does not normally inspect every table position for each operation.",
+        "d": "Incorrect. A table can have many positions; the worst case is related to collisions rather than a table size of one."
+      },
+      "difficulty": "advanced"
+    }
+  ]
 }

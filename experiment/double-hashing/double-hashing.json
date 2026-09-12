@@ -1,32 +1,158 @@
 {
-    "version": 2.0,
-    "questions": [
-        {
-            "question": "1. In Double Hashing, which of the following hash function is used?",
-            "answers": {
-                "a": "(h1(k) \u2013 i*h2(k))mod m",
-                "b": "h1(k) + h2(k)",
-                "c": "(h1(k) + i*h2(k))mod m",
-                "d": "(h1(k) + h2(k))mod m"
-            },
-            "correctAnswer": "c",
-            "explanations": {
-                "c": "Double hashing uses a hash function of the form (h1(k) + i*h2(k))mod m where h1 and h2 are auxiliary hash functions and m is the size of the hash table."
-            },
-            "difficulty": "advanced"
-        },
-        {
-            "question": "2. Which technique has the greatest number of probe sequences?",
-            "answers": {
-                "a": "Quadratic probing",
-                "b": "Linear probing",
-                "c": "Double hashing",
-                "d": "Closed hashing"
-            },
-            "correctAnswer": "c",
-            "explanations": {},
-            "difficulty": "intermediate"
-        }
-    ]
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. In double hashing, which of the following is a commonly used probe-position formula?",
+      "answers": {
+        "a": "$(h_1(k) - i \\cdot h_2(k)) \\bmod m$",
+        "b": "$h_1(k) + h_2(k)$",
+        "c": "$(h_1(k) + i \\cdot h_2(k)) \\bmod m$",
+        "d": "$(h_1(k) + h_2(k)) \\bmod m$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Although subtraction can appear in alternative formulations, it is not the standard probe formula used here.",
+        "b": "Incorrect. This expression does not include the probe number or the modulo operation required to obtain a table index.",
+        "c": "Correct. Double hashing commonly uses $h(k,i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$, where $h_1$ and $h_2$ are hash functions and $m$ is the table size.",
+        "d": "Incorrect. This expression does not incorporate the probe number $i$, so it does not generate the required sequence of probe positions."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "2. Which collision-resolution technique generally provides the largest variety of probe sequences because it uses a second hash function?",
+      "answers": {
+        "a": "Quadratic probing",
+        "b": "Linear probing",
+        "c": "Double hashing",
+        "d": "Separate chaining"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Quadratic probing uses a predetermined quadratic sequence rather than a second hash function.",
+        "b": "Incorrect. Linear probing follows a fixed sequential pattern from the initial position.",
+        "c": "Correct. Double hashing uses a second hash function to determine the probe step, producing a large variety of probe sequences.",
+        "d": "Incorrect. Separate chaining handles collisions by storing multiple entries in a collection associated with a table index rather than generating probe sequences."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. What is the main purpose of the second hash function in double hashing?",
+      "answers": {
+        "a": "To determine the number of keys stored in the table.",
+        "b": "To determine the step size between successive probes.",
+        "c": "To sort the keys in ascending order.",
+        "d": "To remove the first hash function."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The second hash function is not used to count the number of stored keys.",
+        "b": "Correct. The second hash function determines the step size used when generating successive probe positions.",
+        "c": "Incorrect. Double hashing does not use the second hash function to sort keys.",
+        "d": "Incorrect. Double hashing requires both hash functions as part of its probing strategy."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In the expression $h(k,i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$, what does $i$ represent?",
+      "answers": {
+        "a": "The number of elements in the hash table.",
+        "b": "The table capacity.",
+        "c": "The key value.",
+        "d": "The probe number."
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. The number of stored elements is represented separately and is not the role of $i$.",
+        "b": "Incorrect. The table capacity is represented by $m$ in the expression.",
+        "c": "Incorrect. The key is represented by $k$.",
+        "d": "Correct. The value $i$ identifies the current probe attempt and changes the computed position during collision resolution."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Why should the second hash function in double hashing avoid producing a step size of zero?",
+      "answers": {
+        "a": "A zero step would repeatedly probe the same table position.",
+        "b": "A zero step automatically sorts the table.",
+        "c": "A zero step doubles the table size.",
+        "d": "A zero step removes all collisions."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. If $h_2(k)=0$, successive probes do not move to a new position, preventing effective collision resolution.",
+        "b": "Incorrect. A zero step has no sorting effect on the hash table.",
+        "c": "Incorrect. The probe step does not determine whether the table size is doubled.",
+        "d": "Incorrect. A zero step makes collision resolution ineffective rather than eliminating collisions."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. What is a major advantage of double hashing over linear probing?",
+      "answers": {
+        "a": "It never requires a hash function.",
+        "b": "It can reduce clustering by generating more varied probe sequences.",
+        "c": "It stores every collision in a linked list.",
+        "d": "It guarantees constant-time worst-case search."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Double hashing requires hash functions to determine its probe positions.",
+        "b": "Correct. The second hash function produces key-dependent probe steps, which can reduce clustering compared with fixed linear probing.",
+        "c": "Incorrect. Storing collisions in linked lists describes separate chaining.",
+        "d": "Incorrect. Double hashing improves probing behavior but does not guarantee constant-time worst-case search."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Suppose $m=11$, $h_1(k)=4$, $h_2(k)=3$, and the current probe number is $i=2$. What index is generated by double hashing?",
+      "answers": {
+        "a": "$7$",
+        "b": "$8$",
+        "c": "$10$",
+        "d": "$3$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Substituting the given values does not produce index 7.",
+        "b": "Incorrect. The modulo operation with the given values does not produce index 8.",
+        "c": "Correct. $h(k,2)=(4+2\\cdot3)\\bmod11=10$, so the generated index is 10.",
+        "d": "Incorrect. The value 3 is the second hash-function result, not the final table index for this probe."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which condition is commonly desirable for the second hash function when the table size is $m$?",
+      "answers": {
+        "a": "$h_2(k)=0$ for every key",
+        "b": "$h_2(k)$ should be relatively compatible with the table size so that probes can cover the table effectively",
+        "c": "$h_2(k)=h_1(k)$ for every key",
+        "d": "$h_2(k)$ must always be larger than $m$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A zero step would prevent the probe sequence from progressing.",
+        "b": "Correct. The second hash function should produce suitable nonzero step sizes so that the probe sequence can reach available positions effectively.",
+        "c": "Incorrect. Using identical functions is not the defining requirement and can reduce the benefit of having two independent hash functions.",
+        "d": "Incorrect. The second hash result is normally used modulo the table size and does not need to be larger than $m$."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. If two different keys have the same $h_1(k)$ value but different $h_2(k)$ values, what is a likely effect in double hashing?",
+      "answers": {
+        "a": "They must always occupy the same slot.",
+        "b": "They will be rejected automatically.",
+        "c": "They can follow different probe sequences after the initial collision.",
+        "d": "The table size becomes zero."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Different second-hash values can cause the probe sequences to diverge after the initial position.",
+        "b": "Incorrect. A collision does not automatically cause a key to be rejected.",
+        "c": "Correct. Even when the initial hash value is the same, different second-hash values can produce different subsequent probe positions.",
+        "d": "Incorrect. Hash collisions do not change the table size to zero."
+      },
+      "difficulty": "advanced"
+    }
+  ]
 }
-    
