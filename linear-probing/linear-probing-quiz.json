@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is the standard linear probing function?",
+      "answers": {
+        "a": "$F(i)=1$",
+        "b": "$F(i)=i$",
+        "c": "$F(i)=i^2$",
+        "d": "$F(i)=i+1$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A constant offset does not produce the successive linear probe positions.",
+        "b": "Correct. Linear probing commonly uses $F(i)=i$, giving successive offsets of 0, 1, 2, 3, and so on.",
+        "c": "Incorrect. The quadratic expression $i^2$ is associated with quadratic probing.",
+        "d": "Incorrect. Although $i+1$ changes with the probe number, it is not the standard definition of the linear probing offset."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In linear probing, which expression represents the probe position after a collision?",
+      "answers": {
+        "a": "$H(x)=key\\bmod table\\ size$",
+        "b": "$H(x)=(key+F(i^2))\\bmod table\\ size$",
+        "c": "$H(x)=(key+F(i))\\bmod table\\ size$",
+        "d": "$H(x)=(key+F(i^3))\\bmod table\\ size$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This gives the initial hash position but does not incorporate the probing step after a collision.",
+        "b": "Incorrect. Using $i^2$ as the probing term describes quadratic probing rather than linear probing.",
+        "c": "Correct. Linear probing uses a form such as $H(x,i)=(h(x)+F(i))\\bmod m$, with $F(i)=i$.",
+        "d": "Incorrect. A cubic probing term is not the standard linear probing method."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "3. What does linear probing do when the initially computed slot is occupied?",
+      "answers": {
+        "a": "Checks the next table slot sequentially.",
+        "b": "Creates a new hash table.",
+        "c": "Deletes the existing element.",
+        "d": "Stops the insertion permanently."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Linear probing checks successive table positions until an appropriate slot is found.",
+        "b": "Incorrect. A collision does not require creating a new hash table.",
+        "c": "Incorrect. The existing element is not automatically deleted because of a collision.",
+        "d": "Incorrect. Linear probing is specifically designed to continue searching for another slot."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which type of clustering is particularly associated with linear probing?",
+      "answers": {
+        "a": "Secondary clustering only",
+        "b": "Primary clustering",
+        "c": "Tree clustering",
+        "d": "No clustering"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Primary clustering is the characteristic clustering problem associated with linear probing.",
+        "b": "Correct. Linear probing can create primary clusters of consecutive occupied table positions.",
+        "c": "Incorrect. Tree clustering is not a standard term for the clustering behavior of linear probing.",
+        "d": "Incorrect. Linear probing can experience clustering, especially as the load factor increases."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. If $h(k)=k\\bmod10$ and linear probing is used, what is the initial index for key $37$?",
+      "answers": {
+        "a": "$3$",
+        "b": "$7$",
+        "c": "$10$",
+        "d": "$37$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The remainder when 37 is divided by 10 is not 3.",
+        "b": "Correct. Since $37\\bmod10=7$, the initial hash index is 7.",
+        "c": "Incorrect. The modulo operation produces a remainder between 0 and 9 when the divisor is 10.",
+        "d": "Incorrect. The key itself is not the resulting table index."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. What is the average-case search complexity of linear probing when the load factor is kept suitably low and the hash function distributes keys well?",
+      "answers": {
+        "a": "$O(n^2)$",
+        "b": "$O(n)$",
+        "c": "$O(\\log n)$",
+        "d": "$O(1)$"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Quadratic time is not the expected average-case complexity under suitable hashing conditions.",
+        "b": "Incorrect. Linear time can occur in an unfavorable case, but it is not the expected average case under good conditions.",
+        "c": "Incorrect. Logarithmic search is not the standard average-case complexity for linear probing.",
+        "d": "Correct. With a good hash function and a suitably controlled load factor, linear probing has expected constant-time operations."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Suppose a table has size $10$ and $h(k)=k\\bmod10$. If index 4 is occupied, which index is checked next by linear probing?",
+      "answers": {
+        "a": "$3$",
+        "b": "$4$",
+        "c": "$5$",
+        "d": "$8$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Moving backward to index 3 is not the standard direction used by linear probing in this example.",
+        "b": "Incorrect. Index 4 is already occupied, so the next probe must examine another position.",
+        "c": "Correct. Linear probing checks the next sequential slot, so after index 4 it checks index 5.",
+        "d": "Incorrect. Index 8 is not the immediately following slot after index 4."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Why can linear probing become inefficient when the load factor becomes high?",
+      "answers": {
+        "a": "It causes all keys to be deleted.",
+        "b": "Longer clusters and probe sequences become more likely.",
+        "c": "The hash function stops accepting integer keys.",
+        "d": "The table automatically becomes sorted."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A high load factor does not automatically delete keys.",
+        "b": "Correct. As more positions become occupied, linear probing is more likely to encounter long clusters and perform more probes.",
+        "c": "Incorrect. The load factor does not determine which data types the hash function can accept.",
+        "d": "Incorrect. Linear probing does not sort the hash table."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which statement correctly describes the worst-case behavior of linear probing?",
+      "answers": {
+        "a": "Search always takes $O(1)$ time.",
+        "b": "Search always takes $O(\\log n)$ time.",
+        "c": "Search can take $O(n)$ time when many positions must be examined.",
+        "d": "Search always takes $O(n^2)$ time."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Constant-time search is expected under favorable conditions but is not guaranteed in the worst case.",
+        "b": "Incorrect. Linear probing does not provide a guaranteed logarithmic worst-case bound.",
+        "c": "Correct. In an unfavorable table configuration, a search may examine a linear number of positions, resulting in O(n) time.",
+        "d": "Incorrect. The worst-case search does not require a quadratic number of probes."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}

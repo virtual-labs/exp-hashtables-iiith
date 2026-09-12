@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is it called when multiple keys are mapped to the same index in a hash table?",
+      "answers": {
+        "a": "Diffusion",
+        "b": "Replication",
+        "c": "Collision",
+        "d": "Partitioning"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Diffusion is not the term used when multiple keys map to the same hash-table index.",
+        "b": "Incorrect. Replication refers to maintaining copies of data and is not the standard hashing term for this situation.",
+        "c": "Correct. A collision occurs when two or more different keys are mapped to the same hash-table index.",
+        "d": "Incorrect. Partitioning describes dividing data or a structure into parts and is not the hashing term for this situation."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following are commonly used techniques for resolving collisions in hash tables?",
+      "answers": {
+        "a": "Separate chaining",
+        "b": "Linear probing",
+        "c": "Quadratic probing",
+        "d": "All of the mentioned"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Separate chaining is a collision-resolution technique, but it is not the only one listed.",
+        "b": "Incorrect. Linear probing is a collision-resolution technique, but the other listed methods are also used.",
+        "c": "Incorrect. Quadratic probing is a collision-resolution technique, but selecting only it ignores the other valid techniques.",
+        "d": "Correct. Separate chaining, linear probing, and quadratic probing are all commonly used to resolve collisions."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. In separate chaining, how are multiple keys that hash to the same index typically handled?",
+      "answers": {
+        "a": "They are stored in a collection associated with that index.",
+        "b": "They are always discarded.",
+        "c": "They are moved to index 0.",
+        "d": "The entire hash table is sorted."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Separate chaining stores colliding entries in a collection, commonly a linked list, associated with the same table index.",
+        "b": "Incorrect. Separate chaining is specifically designed to retain colliding entries rather than automatically discarding them.",
+        "c": "Incorrect. Colliding entries are not necessarily moved to index 0.",
+        "d": "Incorrect. Separate chaining does not require the entire hash table to be sorted."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In linear probing, what is the usual action when the initially computed slot is occupied?",
+      "answers": {
+        "a": "The key is deleted.",
+        "b": "The next available slot is searched sequentially.",
+        "c": "A linked list is created immediately.",
+        "d": "The hash function is removed."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. An occupied slot does not mean that the key should be deleted.",
+        "b": "Correct. Linear probing checks subsequent slots sequentially until an appropriate slot is found.",
+        "c": "Incorrect. Creating a linked list is associated with separate chaining rather than linear probing.",
+        "d": "Incorrect. The hash function remains part of the hashing process."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What is a major disadvantage of linear probing when many consecutive table positions become occupied?",
+      "answers": {
+        "a": "It prevents all insertions.",
+        "b": "It requires a linked list at every index.",
+        "c": "It can produce primary clustering.",
+        "d": "It guarantees that every search is O(1)."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Linear probing can continue searching for available positions while the table has space.",
+        "b": "Incorrect. Linear probing uses the table array directly and does not require a linked list at every index.",
+        "c": "Correct. Linear probing can create primary clustering, where groups of consecutive occupied positions form and increase probe lengths.",
+        "d": "Incorrect. Clustering and high load factors can cause searches to take more than constant time."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. In quadratic probing, which expression is commonly used as the probing offset?",
+      "answers": {
+        "a": "$F(i) = 1$",
+        "b": "$F(i) = i$",
+        "c": "$F(i) = i^2$",
+        "d": "$F(i) = i + 1$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A constant offset does not represent the quadratic growth used in quadratic probing.",
+        "b": "Incorrect. A linear offset corresponds to linear probing rather than quadratic probing.",
+        "c": "Correct. Quadratic probing commonly uses an offset proportional to $i^2$, producing probe positions that grow quadratically.",
+        "d": "Incorrect. An offset of $i + 1$ does not represent the standard quadratic probing function."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which collision-resolution method stores collided entries outside the main table slots, typically in linked lists or other collections?",
+      "answers": {
+        "a": "Separate chaining",
+        "b": "Linear probing",
+        "c": "Quadratic probing",
+        "d": "Double hashing"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Separate chaining associates a collection, commonly a linked list, with each table index to hold colliding entries.",
+        "b": "Incorrect. Linear probing stores entries directly in the hash table by searching for another slot.",
+        "c": "Incorrect. Quadratic probing searches other table slots using quadratic offsets.",
+        "d": "Incorrect. Double hashing searches table slots using a second hash function to determine the probe step."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Why can separate chaining continue to store more elements than the number of table slots?",
+      "answers": {
+        "a": "Because each key is automatically duplicated.",
+        "b": "Because each slot can maintain a collection of multiple entries.",
+        "c": "Because the table size is changed after every insertion.",
+        "d": "Because collisions are impossible."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Storing more elements does not require automatically duplicating keys.",
+        "b": "Correct. In separate chaining, a single table index can reference a collection containing multiple entries, allowing the number of stored elements to exceed the number of slots.",
+        "c": "Incorrect. The ability to store multiple entries in a chain does not require resizing after every insertion.",
+        "d": "Incorrect. Separate chaining is specifically designed to handle collisions, so collisions remain possible."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which statement best distinguishes open addressing from separate chaining?",
+      "answers": {
+        "a": "Open addressing never encounters collisions.",
+        "b": "Separate chaining requires every table position to contain exactly one key.",
+        "c": "Open addressing stores all entries directly in the table and probes for another slot after a collision.",
+        "d": "Separate chaining cannot be used for hash tables."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Collisions can occur in open addressing and are handled by probing.",
+        "b": "Incorrect. Separate chaining allows multiple entries to be associated with the same table index.",
+        "c": "Correct. In open addressing, entries are stored within the table itself, and probing is used to find another slot after a collision.",
+        "d": "Incorrect. Separate chaining is a widely used method for implementing hash tables."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
