@@ -1,29 +1,158 @@
 {
-    "version": 2.0,
-    "questions": [
-        {
-            "question": "1. Which of the following is the correct quadratic probing function definition?",
-            "answers": {
-                "a": "F(i) = 1",
-                "b": "F(i) = i",
-                "c": "F(i) = i*i",
-                "d": "F(i) = i +1"
-            },
-            "correctAnswer": "c",
-            "explanations": {},
-            "difficulty": "beginner"
-        },
-        {
-            "question": "2. Quadratic probing belongs to which of the following schemes ?",
-            "answers": {
-                "a": "Rehashing",
-                "b": "Extended hashing",
-                "c": "Separate chaining",
-                "d": "Open addressing"
-            },
-            "correctAnswer": "d",
-            "explanations": {},
-            "difficulty": "intermediate"
-        }
-    ]
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is the standard quadratic probing function definition?",
+      "answers": {
+        "a": "$F(i)=1$",
+        "b": "$F(i)=i$",
+        "c": "$F(i)=i^2$",
+        "d": "$F(i)=i+1$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A constant offset does not produce the quadratic sequence of probe positions.",
+        "b": "Incorrect. $F(i)=i$ is associated with linear probing.",
+        "c": "Correct. Quadratic probing commonly uses an offset proportional to $i^2$.",
+        "d": "Incorrect. This is not the standard quadratic probing function."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Quadratic probing belongs to which of the following collision-resolution schemes?",
+      "answers": {
+        "a": "Rehashing",
+        "b": "Extended hashing",
+        "c": "Separate chaining",
+        "d": "Open addressing"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Rehashing is a broader strategy and is not the classification requested here.",
+        "b": "Incorrect. Extended hashing is a different hashing technique and does not describe quadratic probing.",
+        "c": "Incorrect. Separate chaining stores collisions in an associated collection rather than probing alternative table slots.",
+        "d": "Correct. Quadratic probing is an open-addressing collision-resolution technique."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "3. What happens in quadratic probing when the initial hash position is occupied?",
+      "answers": {
+        "a": "The key is discarded immediately.",
+        "b": "The hash table is sorted.",
+        "c": "Alternative positions are checked using quadratic offsets.",
+        "d": "A linked list is always created."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A collision does not require the key to be discarded.",
+        "b": "Incorrect. Quadratic probing does not sort the hash table.",
+        "c": "Correct. After a collision, quadratic probing checks alternative positions using offsets such as $i^2$.",
+        "d": "Incorrect. Creating linked lists is associated with separate chaining rather than quadratic probing."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which expression represents a common quadratic probing sequence?",
+      "answers": {
+        "a": "$h(k), h(k)+1, h(k)+2, h(k)+3$",
+        "b": "$h(k), h(k)+1^2, h(k)+2^2, h(k)+3^2$",
+        "c": "$h(k), h(k)+2, h(k)+4, h(k)+6$",
+        "d": "$h(k), h(k)-1, h(k)-2, h(k)-3$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Consecutive offsets describe linear probing.",
+        "b": "Correct. A common quadratic sequence uses offsets $1^2,2^2,3^2$ and so on.",
+        "c": "Incorrect. This sequence uses a fixed linear increment rather than quadratic offsets.",
+        "d": "Incorrect. Sequential backward offsets do not represent the standard quadratic probing sequence."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What is one advantage of quadratic probing compared with linear probing?",
+      "answers": {
+        "a": "It completely eliminates collisions.",
+        "b": "It can reduce primary clustering.",
+        "c": "It always uses linked lists.",
+        "d": "It guarantees $O(1)$ worst-case search."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Quadratic probing resolves collisions but cannot eliminate their occurrence.",
+        "b": "Correct. By using non-linear probe offsets, quadratic probing can reduce the primary clustering associated with linear probing.",
+        "c": "Incorrect. Linked lists are associated with separate chaining, not quadratic probing.",
+        "d": "Incorrect. Quadratic probing does not guarantee constant-time worst-case search."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. If $h(k)=k\\bmod11$ and $k=24$, what is the initial hash index?",
+      "answers": {
+        "a": "$1$",
+        "b": "$2$",
+        "c": "$3$",
+        "d": "$4$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. The remainder of 24 divided by 11 is not 1.",
+        "b": "Correct. Since $24\\bmod11=2$, the initial index is 2.",
+        "c": "Incorrect. The modulo operation does not produce 3 for these values.",
+        "d": "Incorrect. The remainder is not 4."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. Suppose the initial position is $4$ and the quadratic offset is $i^2$. Ignoring wraparound, which position is checked for $i=2$?",
+      "answers": {
+        "a": "$5$",
+        "b": "$6$",
+        "c": "$7$",
+        "d": "$8$"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Incorrect. Adding an offset of 1 would correspond to $i=1$, not $i=2$.",
+        "b": "Incorrect. The quadratic offset for $i=2$ is not 2.",
+        "c": "Incorrect. The quadratic offset $2^2$ does not produce position 7 from initial position 4.",
+        "d": "Correct. For $i=2$, the offset is $2^2=4$, so the position is $4+4=8$."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. What is a limitation of quadratic probing?",
+      "answers": {
+        "a": "It cannot be used for collision resolution.",
+        "b": "It always requires a linked list.",
+        "c": "Depending on the table size and probing parameters, it may not visit every table position.",
+        "d": "It always produces the same probe sequence for every key."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Quadratic probing is specifically a collision-resolution technique.",
+        "b": "Incorrect. Quadratic probing is an open-addressing method and does not require linked lists.",
+        "c": "Correct. The probe sequence depends on the table size and parameters, and some configurations may fail to reach every slot.",
+        "d": "Incorrect. The initial hash position depends on the key, so probe sequences are not necessarily identical for every key."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which statement best describes the clustering behavior of quadratic probing?",
+      "answers": {
+        "a": "It generally avoids the primary clustering characteristic of linear probing.",
+        "b": "It guarantees that no two keys can collide.",
+        "c": "It converts the table into a sorted array.",
+        "d": "It requires every collision to be stored in a linked list."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Quadratic probing uses non-linear offsets and therefore reduces the primary clustering associated with linear probing.",
+        "b": "Incorrect. Different keys can still hash to the same initial position.",
+        "c": "Incorrect. Quadratic probing does not sort the contents of the table.",
+        "d": "Incorrect. Linked lists are not required by the open-addressing approach used by quadratic probing."
+      },
+      "difficulty": "advanced"
+    }
+  ]
 }
