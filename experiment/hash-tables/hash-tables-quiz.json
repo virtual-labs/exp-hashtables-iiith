@@ -1,31 +1,158 @@
 {
-    "version": 2.0,
-    "questions": [
-        {
-            "question": "1. Which of the following is a use of a Hash Table ? ",
-            "answers": {
-                "a": "Storing data in an associative Manner",
-                "b": "Sorting the given data.",
-                "c": "Getting Unique Values in the given data.",
-                "d": "None of the Above."
-            },
-            "correctAnswer": "a",
-            "explanations": {},
-            "difficulty": "beginner"
-        },
-        {
-            "question": "2. Which of the following is the correct representation of hash table after doing the mentioned operations ? (Assume hash table size = 5 and all values are initialized as 0)<br>Insert(25);<br>Insert(26)<br>Remove(25);<br>Insert(50);",
-            "answers": {
-                "a": "[0,0,0,0,0]",
-                "b": "[25,26,0,0,0]",
-                "c": "[50,26,0,0,0]",
-                "d": "[25,50,0,0,0]"
-            },
-            "correctAnswer": "c",
-            "explanations": {
-                "c": "Initially the hash table is [0,0,0,0,0]<br>After 1st operation Insert(25) -> [25,0,0,0,0]<br>2nd operation Insert(26) -> [25,26,0,0,0]<br>3rd operation Remove(25) -> [0,26,0,0,0]<br>4th operation Insert(50) -> [50,26,0,0,0]"
-            },
-            "difficulty": "beginner"
-        }
-    ]
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is a common use of a hash table?",
+      "answers": {
+        "a": "Storing data using key-value associations",
+        "b": "Sorting data automatically",
+        "c": "Representing every possible key uniquely without collisions",
+        "d": "Storing data only in sequential order"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Hash tables are commonly used to store and retrieve data through key-value associations.",
+        "b": "Incorrect. A standard hash table does not maintain its entries in sorted order.",
+        "c": "Incorrect. Different keys can map to the same index, so collisions are possible.",
+        "d": "Incorrect. Hash tables do not require entries to be stored sequentially."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following is the correct representation of a hash table after performing the mentioned operations? Assume a table size of 5, direct placement for the given keys, and all values are initially 0.<br><pre>Insert(25);<br>Insert(26);<br>Remove(25);<br>Insert(50);</pre>",
+      "answers": {
+        "a": "[0,0,0,0,0]",
+        "b": "[25,26,0,0,0]",
+        "c": "[50,26,0,0,0]",
+        "d": "[25,50,0,0,0]"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. This would represent the table before any successful insertion.",
+        "b": "Incorrect. This state does not account for the removal of 25 and subsequent insertion of 50.",
+        "c": "Correct. Starting from [0,0,0,0,0], inserting 25 gives [25,0,0,0,0], inserting 26 gives [25,26,0,0,0], removing 25 gives [0,26,0,0,0], and inserting 50 gives [50,26,0,0,0].",
+        "d": "Incorrect. This state incorrectly leaves 25 in the table and does not represent the stated sequence of operations."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. If a hash table has $m$ slots and stores $n$ elements, which expression represents its load factor?",
+      "answers": {
+        "a": "$m/n$",
+        "b": "$n/m$",
+        "c": "$n+m$",
+        "d": "$n-m$"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. This is the reciprocal of the usual load-factor definition.",
+        "b": "Correct. The load factor is $\\alpha=n/m$, representing the average number of stored elements per table slot.",
+        "c": "Incorrect. Load factor is defined as a ratio rather than a sum.",
+        "d": "Incorrect. Subtracting the table size from the number of elements does not define load factor."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What is the main purpose of a hash function in a hash table?",
+      "answers": {
+        "a": "To sort all keys.",
+        "b": "To determine an index associated with a key.",
+        "c": "To delete duplicate keys automatically.",
+        "d": "To guarantee that collisions never occur."
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A hash function is primarily used to map keys to table positions, not to sort them.",
+        "b": "Correct. A hash function maps a key to a value that is used to determine an index in the hash table.",
+        "c": "Incorrect. Duplicate-key handling depends on the hash-table implementation and is not the primary purpose of a hash function.",
+        "d": "Incorrect. A hash function cannot generally guarantee that different keys will never collide."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. If $h(k)=k\\bmod 7$, which index is produced for key $24$?",
+      "answers": {
+        "a": "$2$",
+        "b": "$4$",
+        "c": "$3$",
+        "d": "$5$"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. The remainder obtained from 24 divided by 7 is not 2.",
+        "b": "Incorrect. The remainder from the specified modulo operation is not 4.",
+        "c": "Correct. Since $24\\bmod7=3$, the generated index is 3.",
+        "d": "Incorrect. The remainder from $24\\bmod7$ is not 5."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which of the following can cause the performance of a hash table to deteriorate?",
+      "answers": {
+        "a": "A good distribution of keys",
+        "b": "A suitable load factor",
+        "c": "Excessive collisions",
+        "d": "An efficient hash function"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. A good distribution generally helps maintain efficient hash-table operations.",
+        "b": "Incorrect. Maintaining a suitable load factor generally helps control the number of collisions.",
+        "c": "Correct. Excessive collisions increase the amount of work required to locate, insert, or delete entries.",
+        "d": "Incorrect. An efficient hash function generally improves performance by distributing keys effectively."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which collision-resolution technique checks a sequence of table positions using a quadratic offset after a collision?",
+      "answers": {
+        "a": "Separate chaining",
+        "b": "Linear probing",
+        "c": "Quadratic probing",
+        "d": "Sequential sorting"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Separate chaining stores collided entries in a collection associated with the same index.",
+        "b": "Incorrect. Linear probing checks successive positions using a linear offset.",
+        "c": "Correct. Quadratic probing uses offsets such as $i^2$ to generate subsequent positions after a collision.",
+        "d": "Incorrect. Sequential sorting is not a standard collision-resolution technique."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "8. Consider a hash table with $m$ slots and $n$ elements. If $n$ increases while $m$ remains fixed, what happens to the load factor $\\alpha=n/m$?",
+      "answers": {
+        "a": "It increases.",
+        "b": "It decreases.",
+        "c": "It becomes zero.",
+        "d": "It remains unchanged."
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Increasing $n$ while keeping $m$ fixed increases the ratio $n/m$, so the load factor increases.",
+        "b": "Incorrect. With a fixed denominator and an increasing numerator, the ratio increases rather than decreases.",
+        "c": "Incorrect. The load factor is zero only when no elements are stored.",
+        "d": "Incorrect. The load factor changes when the number of stored elements changes while the table size remains fixed."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Why does a hash table generally aim for a uniform distribution of keys across its indices?",
+      "answers": {
+        "a": "To guarantee sorted traversal.",
+        "b": "To minimize the number of table slots.",
+        "c": "To reduce collisions and maintain efficient operations.",
+        "d": "To ensure that every key has a different length."
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Uniform distribution does not guarantee that the keys will be stored in sorted order.",
+        "b": "Incorrect. Uniform distribution is intended to improve utilization and performance, not to minimize the number of slots.",
+        "c": "Correct. Distributing keys uniformly reduces the likelihood of excessive collisions and helps maintain efficient operations.",
+        "d": "Incorrect. Key length is unrelated to the primary purpose of distributing keys uniformly."
+      },
+      "difficulty": "advanced"
+    }
+  ]
 }

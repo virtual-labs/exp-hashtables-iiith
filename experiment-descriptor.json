@@ -2,11 +2,10 @@
   "unit-type": "lu",
   "label": "Hash Tables",
   "basedir": ".",
+  "LaTeXinMD": "true",
   "code-assessment": {
     "include": true,
-    "languages": [
-      "javascript"
-    ],
+    "languages": ["javascript"],
     "position": 9
   },
   "units": [
@@ -49,7 +48,7 @@
           "source": "overview.md",
           "target": "overview.html"
         },
-	
+
         {
           "unit-type": "task",
           "label": "Operations",
@@ -71,16 +70,14 @@
           "source": "simulation/ht_exercise.html",
           "target": "ht_exercise.html"
         },
-	
-        
-	{
-         "unit-type": "task",
-         "label": "Quiz",
-         "content-type": "assesment",
-         "source": "hash-tables-quiz.json",
-         "target": "hash-tables-quiz.html"
-       }
-      
+
+        {
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "hash-tables-quiz.json",
+          "target": "hash-tables-quiz.html"
+        }
       ]
     },
     {
@@ -91,14 +88,14 @@
         {
           "unit-type": "aim"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        
+
         {
           "unit-type": "task",
           "label": "Seperate Chaining",
@@ -106,24 +103,24 @@
           "source": "seperate-chaining.md",
           "target": "seperate-chaining.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Open Addressing",
           "content-type": "video",
           "source": "open-addressing.md",
           "target": "open-addressing.html"
         },
-	
+
         {
-         "unit-type": "task",
-         "label": "Quiz",
-         "content-type": "assesment",
-         "source": "collision-resolution-quiz.json",
-         "target": "collision-resolution-quiz.html"
-       }
+          "unit-type": "task",
+          "label": "Quiz",
+          "content-type": "assesment",
+          "source": "collision-resolution-quiz.json",
+          "target": "collision-resolution-quiz.html"
+        }
       ]
     },
-        {
+    {
       "unit-type": "lu",
       "label": "Linear Probing",
       "basedir": "linear-probing",
@@ -131,14 +128,14 @@
         {
           "unit-type": "aim"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        
+
         {
           "unit-type": "task",
           "label": " Linear Probing",
@@ -153,7 +150,7 @@
           "source": "simulation/lp_practice.html",
           "target": "lp_practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
@@ -169,7 +166,7 @@
         }
       ]
     },
-        {
+    {
       "unit-type": "lu",
       "label": "Quadratic Probing",
       "basedir": "quadratic-probing",
@@ -177,15 +174,14 @@
         {
           "unit-type": "aim"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        
-        
+
         {
           "unit-type": "task",
           "label": "Practice",
@@ -193,7 +189,7 @@
           "source": "simulation/qp_practice.html",
           "target": "qp_practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
@@ -217,15 +213,14 @@
         {
           "unit-type": "aim"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Concept",
           "content-type": "video",
           "source": "overview.md",
           "target": "overview.html"
         },
-        
-        
+
         {
           "unit-type": "task",
           "label": "Practice",
@@ -233,7 +228,7 @@
           "source": "simulation/dh_practice.html",
           "target": "dh_practice.html"
         },
-	{
+        {
           "unit-type": "task",
           "label": "Exercise",
           "content-type": "simulation",
@@ -249,7 +244,7 @@
         }
       ]
     },
-   
+
     {
       "unit-type": "task",
       "label": "Posttest",
@@ -257,7 +252,7 @@
       "source": "posttest.json",
       "target": "posttest.html"
     },
-       
+
     {
       "unit-type": "task",
       "label": "Further Readings/References",
